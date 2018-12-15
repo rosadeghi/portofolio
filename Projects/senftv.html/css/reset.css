@@ -1,0 +1,11 @@
+﻿a{
+    text-decoration:none;
+}
+    a:hover {
+        text-decoration: none;
+    }
+
+ul,hr,section {
+    padding: 0 !important;
+    margin: 0 !important;
+}

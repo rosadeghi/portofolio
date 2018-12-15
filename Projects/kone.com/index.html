@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .first {
+                    color: aliceblue;
+        
+                }
+        
+                .section-text {
+                    position: relative;
+                    bottom: 285px;
+                    text-align: center;
+                    top: 60px;
+                    bottom: 0;
+                }
+                .section-text h5{
+                    padding-top: 45px;
+
+                }
+        
+                .background {
+                    background-color: blue;
+                    width: 100%;
+                    /* height:400px;
+                    top: -80px; */
+                }
+                .threesection{
+                    position: relative;
+            top: -100px;
+                }
+                .third-menu{
+                    box-sizing: border-box;
+
+                }
+  
+            </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap4.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="./js/bootstrap4.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="fonts/Content/font-awesome.min.css" rel="stylesheet" />
+   <link href="./fonts/fontawesome-webfont.woff" rel="stylesheet" />
+
+    <!-- Theme style  -->
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+	<script>
+	    $(document).ready(function (){
+    $('#nav-menu > li').each(function(){
+        var t = null;
+        var li = $(this);
+        li.hover(function(){
+            t = setTimeout(function(){
+                li.find("ul").slideDown(300);
+                t = null;
+            }, 300);
+        }, function(){
+            if (t){
+                clearTimeout(t);
+                t = null;
+            }
+            else
+                li.find("ul").slideUp(200);
+        });
+    });
+});
+	
+	</script>
+	
+	
+	
+	
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><em class="fa fa-angle-up fa-2x"></em></button>
+    <!-- menu -->
+
+    <div class="top-menu-container">
+        <div class="container" style="position:relative;">
+            <div class="row top-menu ">
+                <div class="col-md-6 col-sm-12 mt-2 mb-2  social-menu ">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <em class="fa fa-facebook menu-fa" aria-hidden="true"></em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="fa fa-twitter menu-fa" aria-hidden="true"></em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="fa fa-google-plus menu-fa" aria-hidden="true"></em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="fa fa-linkedin menu-fa" aria-hidden="true"></em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="fa fa-pinterest-p menu-fa" aria-hidden="true"></em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-2 mb-2  register-menu">
+                    <div class="regster-name">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <a href="#">ثبت نام</a>
+                    </div>
+                    <div class="login-name">
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <a href="#">ورود</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="position:relative;">
+            <div class="row secondmenu mt-2">
+
+                <div class="col-md-6 col-sm-12 about-us-menu">
+                    <ul>
+                        <li>
+                            <div class="call">
+                                <em class="fa fa-phone" aria-hidden="true"></em>
+                                <div class="call-text">
+                                    <p class="title">تماس</p>
+                                    <p>۶۶۵ ۶۶۵۵</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="address">
+                                <em class="fa fa-rocket" aria-hidden="true"></em>
+                                <div class="address-text">
+                                    <p class="title"> ما راپیدا کنید</p>
+                                    <p> مات </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-2 search-container">
+                    <form class="plexame" action="/action_page.php">
+                        <input class="input" type="text" placeholder="جستو جو کنید..." name="search2">
+                        <button class="button" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container" style="position:relative;">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg  ">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" style="background-color:#1bbcf2"><i class="fa  fa-align-justify" style="padding-top: 6px"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul id="nav-menu">
+                                        <li class="bgcolor-li-1"><a href="#"><i class="fa fa-map"></i>صفحه خرید</a>
+                                          <!--<ul>  
+                                            <li><a href="justdnn.html">ورژن یک</a></li>
+                                            <li><a href="justdnn.html">ورژن دو</a></li>
+                                            <li><a href="justdnn.html">ورژن سه</a></li>
+            
+                                          </ul>-->
+                                        </li>
+                                        <li class="bgcolor-li-2"><a href="#"><i class="fa fa-folder-open"></i> میانبر ها</a>
+                                          <!--<ul>  
+                                            <li><a href="#">Item 2.1</a></li>
+                                            <li><a href="#">Item 2.2</a></li>
+                                          </ul>-->
+                                        </li>
+                                        <li class="bgcolor-li-3"><a href="#"><i class="fa fa-comment"></i>صفحات</a>
+                                          
+                                              
+                                                <!--<ul>
+                                                        <li><a href="justdnn-about-us.html" target="">در باره ما</a></li>
+                                                        <li><a href="justdnn-service.html" target="">خدمات</a></li>
+                                                        <li><a href="meet the team.html" target="">ملاقات با تیم</a></li>
+                                                        <li><a href="justdnn-contact.html" target="">تماس</a></li>
+                                                        <li><a href="http://project.justdnn.com/hermes/Pages/Portfolio.aspx" target="">نمونه کار</a></li>
+                                                        <li><a href="justdnn-pricing.html" target="">جدول قیمت ها</a></li>
+                                                        <li><a href="justdnn-oops.html" target="">ارور ۴۰۵</a></li>
+                                                        <li><a href="justdnn-FAQ.html" target="" class="selected">اف ای کیو</a></li>
+                                                </ul>-->
+                                           
+                                          
+                                        </li>
+                                        <li class="bgcolor-li-4"><a href="#"><i class="fa fa-paper-plane"></i>ساختار</a></li>
+                                        <li class="bgcolor-li-5"><a href="#"><i class="fa fa-phone"></i>رنک ها</a>
+                                            <!--<ul>  
+                                                    <li><a href="justdnn.html">ابی</a></li>
+                                                    <li><a href="justdnn.html">قرمز</a></li>
+                                                    <li><a href="justdnn.html">صورتی</a></li>
+                                                    <li><a href="justdnn.html">نارنجی</a></li>
+                                                    <li><a href="justdnn.html">زرد</a></li>
+                                                    <li><a href="justdnn.html">سبز</a></li>
+                                                    <li><a href="justdnn.html">قهوه ای</a></li>
+                                                    <li><a href="justdnn.html">مشکی</a></li>
+                                                    <li><a href="justdnn.html">بنفش</a></li>
+                                                    <li><a href="justdnn.html">فیروزه ای</a></li>
+                                                    <li><a href="justdnn.html">شکلاتی</a></li>
+                    
+                                                  </ul>-->
+                                        </li>
+                                            
+                                        <li class="bgcolor-li-6"><a href="#"><i class="fa fa-home"></i> صفحه اصلی</a>
+                                            <!--<ul>  
+                                                    <li><a href="justdnn.html">ورژن یک</a></li>
+                                                    <li><a href="justdnn.html">ورژن دو</a></li>
+                                                    <li><a href="justdnn.html">ورژن سه</a></li>
+                    
+                                                  </ul>-->
+                                        </li>
+                                        <li  class="bgcolor-li-7"><a href="#"><i class="fa fa-home"></i>صفحه اصلی</a>
+                                            <!--<ul>  
+                                                    <li><a href="justdnn.html">ورژن یک</a></li>
+                                                    <li><a href="justdnn.html">ورژن دو</a></li>
+                                                    <li><a href="justdnn.html">ورژن سه</a></li>
+                    
+                                                  </ul>-->
+                                        </li>
+                                        <li  class="bgcolor-li-8"><a href="#"><i class="fa fa-home"></i>صفحه اصلی</a>
+                                            <!--<ul>  
+                                                    <li><a href="justdnn.html">ورژن یک</a></li>
+                                                    <li><a href="justdnn.html">ورژن دو</a></li>
+                                                    <li><a href="justdnn.html">ورژن سه</a></li>
+                    
+                                                  </ul>-->
+                                        </li>
+                                       
+                                       
+
+                                      </ul>
+            
+                            <!-- <ul class="navbar-nav" id="nav-menu">
+                                <li class="nav-item bglogo active ">
+                                    <a class="nav-link" href="#">
+                                        <div class="main-menu-logo">
+                                            <img src="img/Mat-credit-logo.png" style="width:120px;height:100px;">
+                                        </div> <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  bg-1">
+                                    <a class="nav-link" href="#">صفحه اصلی</a>
+
+                                </li>
+                                <li class="nav-item bg-2" style="background-color:rgb(47, 18, 100);">
+                                    <a class="nav-link" href="#">در باره ما</a>
+
+                                </li>
+                                <li class="nav-item bg-3 dropdown" style="background-color:rgb(194, 207, 72);">
+                                    <a class="nav-link disabled" href="#">نمونه کار</a>
+								<ul >
+									<li> <a class="nav-link2 disabled" href="#">2نمونه کار</a></li>
+									<li> <a class="nav-link2 disabled" href="#">2نمونه کار</a></li>
+								</ul>
+                                </li>
+                                <li class="nav-item  bg-4" style="background-color:red;">
+                                    <a class="nav-link disabled" href="#">نمونه کار</a>
+
+                                </li>
+                                <li class="nav-item  bg-5">
+                                    <a class="nav-link disabled" href="#">نمونه کار</a>
+
+                                </li>
+                                <li class="nav-item  bg-6">
+                                    <a class="nav-link disabled" href="#">نمونه کار</a>
+
+                                </li>
+                                <li class="nav-item bg-3" style="background-color:rgb(194, 207, 72);">
+                                    <a class="nav-link disabled" href="#">نمونه کار</a>
+
+                                </li>
+
+                            </ul> -->
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- end menu -->
+
+    <!-- slider -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="marginauto">
+                <div id="demo11" class="carousel slide" data-ride="carousel">
+
+
+
+
+
+
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="position">
+                                <img src="img/vinkkeja-sisallontuotantoon-elokuu.png" alt="kone" width=100% height="auto"
+                                    style="filter: brightness(20%);">
+
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="position">
+                                <img src="img/vinkkeja-sisallontuotantoon-maaliskuu.jpg" alt="kone" width=100% height="auto"
+                                    style="filter: brightness(20%);">
+
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="position">
+                                <img src="img/omfavnelse.jpg" alt="kone" width=100% height="auto" style="filter: brightness(20%);">
+
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo11" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo11" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end slider -->
+
+
+
+
+    <!-- boxs -->
+    <div class=" container boxs ">
+        <div class="row">
+            <div class="col-xl-3 col-md-6 col-sm-12 box ">
+                <div class=" texts texta">
+                    <h4 class="mt-3 mb-3">باکس اول
+                    </h4>
+
+                    <div class="title-box">
+
+                    </div>
+                    <p class="mt-2 mb-2">ک وبسایت، هرچند ساده میتواند علاوه بر برطرف کردن نیاز صاحب وبسایت توجه بسیاری
+                        از کاربران را به خود جلب
+                        کند.
+                    </p>
+                    <a href="#" class="anchor clr1 mt-5" style="color:#8bc34a;">ادامه مطلب</a>
+                </div>
+                <p class="circle" style="background-color:#8bc34a;">
+                    <div class="inner-circle" style="background-color:#8bc34a;">
+                        <em class="fa fa-cog icon" aria-hidden="true"></em>
+                    </div>
+                </p>
+
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12  box">
+                <div class="texts textb">
+                    <h4 class="mt-3 mb-3">باکس دوم
+                    </h4>
+                    <div class="title-box">
+
+                    </div>
+                    <p class="mt-2 mb-2">ک وبسایت، هرچند ساده میتواند علاوه بر برطرف کردن نیاز صاحب وبسایت توجه بسیاری
+                        از کاربران را به خود جلب
+                        کند.
+                    </p>
+                    <a href="#" class="anchor clr2 mt-5" style="color:#dc1313;">ادامه مطلب</a>
+
+                </div>
+                <p class="circle" style="background-color:#dc1313;">
+                    <div class="inner-circle" style="background-color:#dc1313;">
+                        <em class="fa fa-cog icon" aria-hidden="true"></em>
+                    </div>
+                </p>
+
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12  box ">
+                <div class="texts textc">
+                    <h4 class="mt-3 mb-3">باکس سوم
+                    </h4>
+                    <div class="title-box mr-3">
+
+                    </div>
+                    <p class="mt-2 mb-2">ک وبسایت، هرچند ساده میتواند علاوه بر برطرف کردن نیاز صاحب وبسایت توجه بسیاری
+                        از کاربران را به خود جلب
+                        کند.
+                    </p>
+                    <a href="#" class="anchor clr3 mt-5" style="color:#1bbcf2">ادامه مطلب</a>
+
+                </div>
+                <p class="circle" style="background-color:#1bbcf2;">
+                    <div class="inner-circle" style="background-color:#1bbcf2;">
+                        <em class="fa fa-futbol-o icon" aria-hidden="true"></em>
+                    </div>
+                </p>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12  box ">
+                <div class="texts textd">
+
+                    <h4 class="mt-3 mb-3">باکس چهارم
+                    </h4>
+                    <div class="title-box">
+
+                    </div>
+                    <p class="mt-2 mb-2">ک وبسایت، هرچند ساده میتواند علاوه بر برطرف کردن نیاز صاحب وبسایت توجه بسیاری
+                        از کاربران را به خود جلب
+                        کند.
+                    </p>
+                    <a href="#" class="anchor clr1 mt-5" style="color:#f67234;">ادامه مطلب</a>
+
+                </div>
+                <p class="circle" style="background-color:#f67234;">
+                    <div class="inner-circle" style="background-color:#f67234;">
+                        <em class="fa fa-gg icon spdBaseBgColr" aria-hidden="true"></em>
+                    </div>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- end box -->
+
+    <!-- service -->
+    <div class="container service mb-5">
+        <div class="srvheader">
+            <div class="row" style="text-align: center">
+
+                <div class="col-md-12 mb-5">
+                    <h3>خدمات ما</h3>
+                    <p>دیدن این وب سایت را به همه طراحان وب سایت توصیه مینماییم.</p>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon srvicon1-color">
+                                <em class="fa fa-pencil-square clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon  srvicon2-color">
+                                <em class="fa fa-black-tie clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon srvicon3-color">
+                                <em class="fa fa-rocket clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon srvicon4-color">
+                                <em class="fa fa-comment clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon srvicon5-color">
+                                <em class="fa fa-thumb-tack clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon srvicon6-color">
+                                <em class="fa fa-dropbox clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon srvicon7-color">
+                                <em class="fa fa-file clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="srvbox mb-4">
+                        <div class="d-flex flex-row">
+                            <div class="srvicon srvicon8-color">
+                                <em class="fa fa-youtube-play clr1 " aria-hidden="true"></em>
+                            </div>
+                            <div class="srvtext">
+                                <h6>طراحی منحصر به فرد
+                                </h6>
+                                <p> دیدن این وب سایت را به همه طراحان وب سایت مخصوصا طراحان بخش استاتیک وب سایت توصیه
+                                    مینماییم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end service -->
+
+
+
+    <!-- section -->
+
+    <div class="container-fluid first">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-text">
+                    <h5>موفقیت با دی ان ان شروع میشود</h5>
+                    <p> کسب و کار خود را موفق و قدرت سایت خود را بالا ببرید.سب و کار خود را موفق و قدرت سایت خود را
+                        بالا
+                        ببرید
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-12 col-sm-12 background">
+                <div class="container threesection" style="border-bottom: 1px solid #fff">
+                    <div class="row">
+                        <div class="col-md-4 col-xl-4 col-sm-12">
+
+                            <div class="bg1 main-section bgSec1">
+                                <em class="fa fa-folder-open icon" aria-hidden="true"></em>
+                                <h3>سلام</h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک اسد.
+                                </p>
+                                <a href="#" class="anchor clr1" style="color:#8ac24a;">ادامه مطلب</a>
+                            </div>
+                            <div class="after1" style="position:absolute">
+                                <p></p>
+                            </div>
+                            <div class="befor1">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4 col-sm-12">
+
+                            <div class="bg1 main-section bgSec2">
+                                <em class="fa fa-briefcase icon" aria-hidden="true"></em>
+                                <h3>سلام</h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک اسد.
+                                </p>
+                                <a href="#" class="anchor clr1" style="color:#2d83df;">ادامه مطلب</a>
+                            </div>
+                            <div class="after2" style="position:absolute">
+                                <p></p>
+                            </div>
+                            <div class="befor2">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4 col-sm-12">
+
+                            <div class="bg1 main-section bgSec3">
+                                <em class="fa fa-shield icon" aria-hidden="true"></em>
+                                <h3>سلام</h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک اسد.
+                                </p>
+                                <a href="#" class="anchor clr1" style="color:#e61313;">ادامه مطلب</a>
+
+                            </div>
+                            <div class="after3" style="position:absolute">
+                                <p></p>
+                            </div>
+                            <div class="befor3">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container threesection-bottom">
+                    <div class="row">
+                        <div class="col-md-6 threesection-text">
+
+                            <h6><strong>موفقیت کار با دی ان ان</strong> </h6>
+                            <p>تجارت خود را موفق و سایت خود را قوی کنید</p>
+
+                        </div>
+                        <div class="col-md-6 threesection-a">
+                            <a href="#" class="anchor">اطلاعات بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end section -->
+
+    <!-- team -->
+    <!-- <div class="container">
+        <div class="teams-text mt-5 mb-5">
+            <div class="row" style="text-align: center">
+
+                <div class="col-md-12 ">
+
+                    <h3> با تیم عالی ما اشنا شوید</h3>
+                    <p>دیدن این وب سایت را به همه طراحان وب سایت توصیه مینماییم.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-teams mb-5">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xl-3 mb_3  bg">
+                    <div class="main_team img1 mt-5">
+                        <div class="teamimg">
+                            <img src="img/team-man4.png">
+                        </div>
+                        <div class="content">
+                            <div class="title-box">
+
+                            </div>
+                            <h4>جان چینا</h4>
+                            <p>طراح گرافیک</p>
+                        </div>
+                        <ul>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-facebook" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-twitter" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-google-plus" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xl-3 mb_3 bg" >
+                    <div class="main_team img2 mt-5">
+                        <div class="teamimg">
+                            <img src="img/team-man3.png">
+                        </div>
+                        <div class="content">
+                            <div class="title-box">
+
+                            </div>
+                            <h4>سوانا الن</h4>
+                            <p>مدیر فروش</p>
+                        </div>
+                        <ul>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-facebook" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-twitter" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-google-plus" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xl-3 mb_3 bg">
+                    <div class="main_team img3 mt-5">
+                        <div class="teamimg">
+                            <img src="img/team-man2.png">
+                        </div>
+                        <div class="content">
+                            <div class="title-box">
+
+                            </div>
+
+                            <h4>جوناتان ویلسون</h4>
+                            <p>طراح سایت</p>
+                        </div>
+                        <ul>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-facebook" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-twitter" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-google-plus" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xl-3 mb_3 bg" >
+                    <div class="main_team img4 mt-5">
+                        <div class="teamimg">
+                            <img src="img/team-man1.png">
+                        </div>
+                        <div class="content">
+                            <div class="title-box">
+
+                            </div>
+
+                            <h4>لوبانا هاکو</h4>
+                            <p>مدیر</p>
+                        </div>
+                        <ul>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-facebook" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-twitter" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                            <li class="img-list">
+                                <a href="#">
+                                    <em class="fa fa-google-plus" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12 mt-5 mb-5">
+                <div class="man-text-header">
+
+                    <h3> با تیم عالی ما اشنا شوید</h3>
+                    <p>دیدن این وب سایت را به همه طراحان وب سایت توصیه مینماییم.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-3 col-sm-3 wow fadeInUp animated mt-5 mb-5" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="main-man bg1-a" data-aos="fade-down">
+                 
+                    <img class="img_controls" src="img/team-man1.png" alt="404">
+                    <div class="man-text">
+                        <div class="title-box"></div>
+                        <h4>جوناتا ویلسون</h4>
+                        <p>مدیر طراحی</p>
+                    </div>
+                    <ul>
+                        <li><a href="#"><em class="fa fa-facebook" aria-hidden="true"></em></a> </li>
+                        <li><a href="#"><em class="fa fa-twitter" aria-hidden="true"></em></a> </li>
+                        <li><a href="#"><em class="fa fa-google-plus" aria-hidden="true"></em></a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 wow fadeInUp animated mt-5 mb-5" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="main-man bg2-b" data-aos="fade-up">
+                     
+                        <img class="img_controls" src="img/team-man2.png" alt="404">
+                        <div class="man-text">
+                            <div class="title-box"></div>
+                            <h4>جوناتا ویلسون</h4>
+                            <p>مدیر طراحی</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><em class="fa fa-facebook" aria-hidden="true"></em></a> </li>
+                            <li><a href="#"><em class="fa fa-twitter" aria-hidden="true"></em></a> </li>
+                            <li><a href="#"><em class="fa fa-google-plus" aria-hidden="true"></em></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 wow fadeInUp animated mt-5 mb-5" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="main-man bg3-c" data-aos="fade-up">
+                         
+                            <img class="img_controls" src="img/team-man3.png" alt="404">
+                            <div class="man-text">
+                                <div class="title-box"></div>
+                                <h4>جوناتا ویلسون</h4>
+                                <p>مدیر طراحی</p>
+                            </div>
+                            <ul>
+                                <li><a href="#"><em class="fa fa-facebook" aria-hidden="true"></em></a> </li>
+                                <li><a href="#"><em class="fa fa-twitter" aria-hidden="true"></em></a> </li>
+                                <li><a href="#"><em class="fa fa-google-plus" aria-hidden="true"></em></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 wow fadeInUp animated mt-5 mb-5 " style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="main-man bg4-d" data-aos="fade-down">
+                             
+                                <img class="img_controls" src="img/team-man4.png" alt="404">
+                                <div class="man-text">
+                                    <div class="title-box"></div>
+                                    <h4>جوناتا ویلسون</h4>
+                                    <p>مدیر طراحی</p>
+                                </div>
+                                <ul>
+                                    <li><a href="#"><em class="fa fa-facebook" aria-hidden="true"></em></a> </li>
+                                    <li><a href="#"><em class="fa fa-twitter" aria-hidden="true"></em></a> </li>
+                                    <li><a href="#"><em class="fa fa-google-plus" aria-hidden="true"></em></a> </li>
+                                </ul>
+                            </div>
+                        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- end team -->
+
+
+    <!-- pakage -->
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-4 col-xl-4 col-sm-12 nopadding">
+                <div>
+                    <img src="img/215_con1.png" width="100%">
+                </div>
+            </div>
+            <div class="col-md-4 col-xl-4 col-sm-12 nopadding d-flex align-items-center" style="background-color:#2e84e0;">
+                <div class="text-pakege" data-aos="zoom-in">
+                    <h3>تاریخچه تم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک اسد.
+                    </p>
+                    <a href="#">ادامه مطلب</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-xl-4 col-sm-12 nopadding">
+                <div>
+                    <img src="img/215_con2.png" width="100%">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-xl-4 col-sm-12 nopadding d-flex align-items-center" style="background-color:#e61313;">
+                <div class="text-pakege" data-aos="zoom-in">
+                    <h3>تاریخچه تم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک اسد.
+                    </p>
+                    <a href="#">ادامه مطلب</a>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-xl-4 col-sm-12 nopadding">
+                <div>
+                    <img src="img/215_con3.png" width="100%">
+                </div>
+            </div>
+            <div class="col-md-4 col-xl-4 col-sm-12 nopadding d-flex align-items-center" style="background-color:#f67234;">
+                <div class="text-pakege " data-aos="zoom-in">
+                    <h3>تاریخچه تم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک اسد.
+                    </p>
+                    <a href="#">ادامه مطلب</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end pakage -->
+
+
+
+    <!-- plane -->
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-12 plan-text mt-5 ">
+                <h4>برنامه ریزی قیمت</h4>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.></p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4 mt-3" data-aos="zoom-in-right">
+                <div class="plans1">
+                    <div class="planfirst">
+                        <div class="planfirst-text">
+                            <h3>طرح جونیر</h3>
+                            <div class="title-box">
+
+                            </div>
+                            <p>مینماییم یدن این وب سایت را به همه طراحان وب سایت توصیه </p>
+                            <div class="price-circle1">
+                                <div class="plancircle">
+                                    <div class="main-circle1"></div>
+                                    <div class="plancircle-text">
+                                        <p>شروع</p>
+                                        <h3>۹۹ریال</h3>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line" style="background-color:#23dd13"></div>
+                    <div class="planend">
+                        <ul>
+                            <li>حفاظت از ویروس</li>
+                            <li>پیکر بندی خودکار مشتری</li>
+                            <li>دسترسی ای ام تی پی</li>
+                        </ul>
+                        <button class="btn colr1"> خرید</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3" data-aos="zoom-in-left">
+                <div class="plans2">
+                    <div class="planfirst">
+                        <div class="planfirst-text">
+                            <h3>طرح جونیر</h3>
+                            <div class="title-box">
+
+                            </div>
+                            <p>مینماییم یدن این وب سایت را به همه طراحان وب سایت توصیه </p>
+                            <div class="price-circle2">
+                                <div class="plancircle">
+                                    <div class="main-circle2"></div>
+                                    <div class="plancircle-text">
+                                        <p>شروع</p>
+                                        <h3>۹۹ریال</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line" style="background-color:#1bbdf3"></div>
+                    <div class="planend">
+                        <ul>
+                            <li>حفاظت از ویروس</li>
+                            <li>پیکر بندی خودکار مشتری</li>
+                            <li>دسترسی ای ام تی پی</li>
+                        </ul>
+                        <button class="btn colr2">خرید </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3" data-aos="zoom-in-down">
+                <div class="plans3">
+                    <div class="planfirst">
+                        <div class="planfirst-text">
+                            <h3>طرح جونیر</h3>
+                            <div class="title-box">
+
+                            </div>
+                            <p>مینماییم یدن این وب سایت را به همه طراحان وب سایت توصیه </p>
+                            <div class="price-circle3">
+                                <div class="plancircle">
+
+                                    <div class="main-circle3"></div>
+                                    <div class="plancircle-text">
+                                        <p>شروع</p>
+                                        <h3>۹۹ریال</h3>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line" style="background-color:#c81010"></div>
+                    <div class="planend">
+                        <ul>
+                            <li>حفاظت از ویروس</li>
+                            <li>پیکر بندی خودکار مشتری</li>
+                            <li>دسترسی ای ام تی پی</li>
+                        </ul>
+                        <button class="btn colr3">خرید </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end plane -->
+
+    <!-- footer -->
+
+    <div class="container-fluid">
+
+        <div class="row bgfooter">
+            <div class="col-md-12">
+                <div class="footer-text">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row bgfooter">
+            <div class="container bgfooter ">
+                <div class="row">
+                    <div class="col-md-12 mb-5" style="box-sizing: border-box; text-align: center">
+                        <div class="fun_main  color-1 mr-2 ml-2" >
+                            <div class="iconn">
+                                <em class="fa fa-calendar-minus-o footr-fa" aria-hidden="true"></em>
+                            </div>
+                            <div class="right-con">
+                                <h2 class="counter" data-count="245">0</h2>
+                                <p class="p_sub">پروژه</p>
+                            </div>
+                        </div>
+                        <div class="fun_main color-2 mr-2 ml-2">
+                            <div class="iconn">
+                                    <em class="fa fa-clone" aria-hidden="true"></em>             
+                                               </div>
+                            <div class="right-con">
+                                <h2 class="counter" data-count="225" >0</h2>
+                                <p class="p_sub">پروژه</p>
+                            </div>
+                        </div>
+                        <div class="fun_main color-3 mr-2 ml-2">
+                            <div class="iconn">
+                                    <em class="fa fa-camera-retro footr-fa" aria-hidden="true"></em>                            </div>
+                            <div class="right-con">
+                                <h2 class="counter" data-count="185">0</h2>
+                                <p class="p_sub">پروژه</p>
+                            </div>
+                        </div>
+                        <div class="fun_main color-4 mr-2 ml-2">
+                            <div class="iconn">
+                                    <em class="fa fa-hourglass-o footr-fa" aria-hidden="true"></em>                            </div>
+                            <div class="right-con">
+                                <h2 class="counter" data-count="211">0</h2>
+                                <p class="p_sub">پروژه</p>
+                            </div>
+                        </div>
+                        <div class="fun_main color-5 mr-2 ml-2">
+                            <div class="iconn">
+                                    <em class="fa fa-clipboard footr-fa" aria-hidden="true"></em>                            </div>
+                            <div class="right-con">
+                                <h2 class="counter"data-count="270">0</h2>
+                                <p class="p_sub">پروژه</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row" style="background-color: black; border-top:1px solid #f67234;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mt-3">
+                        <div class="footer-main-logo">
+                            <img src="img/Mat-credit-logo.png" width="100px" height="80px;">
+                        </div>
+                        <div class="footer-main-paraghraph">
+
+                            <p> یپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                استیپسوم
+                                متن
+                                ساختگی
+                                با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-3">
+
+                        <div class="footer-main-item">
+
+
+                            <h3>آیتم فوتر</h3>
+                            <div class="title-box">
+
+                            </div>
+                        </div>
+                        <div class="footer-main-lists">
+                            <div class="row">
+                                <div class="col-md-6 footer-main-list pr-5">
+                                    <ul class="">
+                                        <li>
+                                            <a href="#">صفحه اصلی</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">درباره ما</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">خدمات</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">مشتریان</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">اخبار</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 footer-main-list pr-5">
+                                    <ul>
+                                        <li>
+                                            <a href="#">صفحه اصلی</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">درباره ما</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">خدمات</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">مشتریان</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">اخبار</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                        <div class="footer-main-tags">
+
+
+                            <h4>تگ های پرطرفدار</h4>
+                            <div class="title-box">
+
+                            </div>
+                        </div>
+                        <div class="footer-main-tag">
+                            <ul>
+                                <li>
+                                    <a href="#">موکاپ</a>
+                                </li>
+                                <li>
+                                    <a href="#">خلاق</a>
+                                </li>
+                                <li>
+                                    <a href="#">پرینت</a>
+                                </li>
+                                <li>
+                                    <a href="#">اچ تی ام ال</a>
+                                </li>
+                                <li>
+                                    <a href="#">یو ای</a>
+                                </li>
+                                <li>
+                                    <a href="#">موکاو</a>
+                                </li>
+                                <li>
+                                    <a href="#">طرح جدید</a>
+                                </li>
+                                <li>
+                                    <a href="#">برنامه</a>
+                                </li>
+                                <li>
+                                    <a href="#">جوا</a>
+                                </li>
+                                <li>
+                                    <a href="#">سی اس اس</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                        <div class="footer-main-imgs">
+
+
+                            <h4>
+                                انجمن دی ان ان
+                            </h4>
+                            <div class="title-box">
+
+                            </div>
+                            <div class="footer-main-img">
+                                <div class="row">
+                                        <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="img/dnn-forum1.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="img/dnn-forum2.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="img/dnn-forum3.png">
+                                                    </a>
+                                                </li>
+                                               
+                                            </ul>
+                                </div>
+                                <div class="row">
+                                        <ul>
+                                                
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="img/dnn-forum4.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="img/dnn-forum5.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="img/dnn-forum6.png">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row footer-end">
+            <div class="container">
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-6">
+                        <div class="copyrights">
+                            <div class="languge">
+                                <span>
+                                    <img src="img/en-US.gif">
+                                </span>
+                                <span>
+                                    <img src="img/id-ID.gif">
+                                </span>
+                            </div>
+                            <div class="copyright">
+                                <p>حقوق این سایت محفوظ میباشد</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 copyright-menu">
+                        <ul>
+                            <li><a href="/home">صفحه اصلی</a></li>
+                            <li>|</li>
+                            <li><a href="/pages/about">درباره ما</a></li>
+                            <li>|</li>
+                            <li><a href="/pages/services">خدمات</a></li>
+                            <li>|</li>
+                            <li><a href="/terms">Terms &amp; Conditions</a></li>
+                            <li>|</li>
+                            <li><a href="/contact">تماس باما</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end footer -->
+
+
+
+
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        $(document).ready(function () {
+            // grab the initial top offset of the navigation 
+            var stickyNavTop = $('.navbar').offset().top;
+
+            // our function that decides weather the navigation bar should have "fixed" css position or not.
+            var stickyNav = function () {
+                var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+
+                // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+                // otherwise change it back to relative
+                if (scrollTop > stickyNavTop) {
+                    $('.navbar').addClass('sticky');
+                    $('.navbar').addClass('container');
+                    $('.navbar').addClass('bg-dark');
+
+                } else {
+                    $('.navbar').removeClass('sticky');
+                    $('.navbar').removeClass('bg-dark');
+                }
+            };
+
+            stickyNav();
+            // and run it again every time you scroll
+            $(window).scroll(function () {
+                stickyNav();
+            });
+        });
+
+$('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 2000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+  
+  
+
+});
+
+
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>

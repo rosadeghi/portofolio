@@ -1,0 +1,429 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap4.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="./js/bootstrap4.js"></script>
+    <script src="./js/flip.js"></script>
+
+
+    <script src="./js/jquery-ui.min.js"></script>
+
+
+    <style>
+        #tabs .ui-tabs-active {
+            background: #4a7aec;
+            color: #fff !important;
+        }
+        #tabs .ui-tabs-active a {
+            color: #fff !important;
+        }
+        #tabs-b .ui-tabs-active {
+            background: #4a7aec;
+            color: #fff !important;
+        }
+        #tabs-b .ui-tabs-active a {
+            color: #fff !important;
+        }
+        /* .box-class{
+        background-color: #fff;
+        color: #4a7aec;
+        border: #4a7aec;
+        } */
+        .add-class{
+            background-color: #fff;
+            color: #4a7aec;
+            border:3px solid #4a7aec;
+            /* box-shadow: 10px 10px 5px #888; */
+        }
+        
+        </style>
+
+
+    <link href="./Content/font-awesome.min.css" rel="stylesheet" />
+    <!-- Theme style  -->
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+
+        $(function () {
+            $("#tabs").tabs();
+        });
+        $(function () {
+            $("#tabs-b").tabs();
+        });
+
+
+
+
+
+        $(document).ready(function () {
+
+            $(".js-box-container").hover(function () {
+                $(this).find(".js-box").removeClass('remove-class')
+                $(this).find(".js-box").addClass('add-class')
+            }, function () {
+                $(this).find(".js-box").removeClass('add-class')
+                $(this).find(".js-box").addClass('remove-class')
+
+            });
+
+            $(".topicon").hover(function () {
+                $(this).find(".js-box-container").css('box-shadow', '0 0 7px #e9d9d9')
+            }, function () {
+                $(this).find(".js-box-container").css('box-shadow', '0 0 0px #e9d9d9')
+
+            });
+        });
+
+
+        $(document).ready(function () {
+
+            $(".topicon2").hover(function () {
+                $(this).find(".js-box-container2").css('background', '#4a7aec', 'box-shadow', '0 0 px #ddd')
+            }, function () {
+                $(this).find(".js-box-container2").css('background', '#fff', 'box-shadow', '0 0 px #ddd')
+
+            });
+
+
+        });
+
+
+
+
+
+        $(document).ready(function () {
+
+            $(".featured-pro").hover(function () {
+                // $(this).find(".js-box").removeClass('remove-class')
+                $(this).find(".featured-pro-text").css("box-shadow", "0px 0px 7px #e9d9d9")
+            }, function () {
+                // $(this).find(".js-box").removeClass('add-class')
+                $(this).find(".featured-pro-text").css("box-shadow", "0px 0px 0px #e9d9d9")
+
+            });
+
+            $(".featured-pro").hover(function () {
+                $(this).find(".featured-pro-box-1").css("background-color", "#4a7aec")
+            }, function () {
+                $(this).find(".featured-pro-box-1").css("background-color", "  rgba(0,0,0,0.5)")
+
+            });
+        });
+
+
+
+
+
+
+
+        $(document).ready(function () {
+            $('.dropdown').click(
+                function () {
+                    $(this).children('.sub-menu').slideDown(400);
+                },
+                function () {
+                    $(this).children('.sub-menu').slideUp(200);
+                }
+            );
+        });
+
+
+        $(document).ready(function () {
+            $('#nav-menu > li').each(function () {
+                var t = null;
+                var li = $(this);
+                li.hover(function () {
+                    t = setTimeout(function () {
+                        li.find("ul").slideDown(300);
+                        t = null;
+                    }, 300);
+                }, function () {
+                    if (t) {
+                        clearTimeout(t);
+                        t = null;
+                    }
+                    else
+                        li.find("ul").slideUp(200);
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+   <!-- hederinfo -->
+    <header style="padding: 0px;">
+
+        <nav class="navbar fixed-top navbar-expand-lg " style="background: #343a40">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" id="nav-menu">
+                    <li class="nav-item active-1"><a class="nav-link" href="#">صفحه اصلی</a>
+                        <ul>
+                            <li><a href="index.html">ورژن یک</a></li>
+                            <li><a href="index.html">ورژن دو</a></li>
+                            <li><a href="index.html">ورژن سه</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">صفحه خرید<span class="sr-only">(current)</span></a>
+                        <ul>
+                            <li><a href="index.html">ورژن یک</a></li>
+                            <li><a href="index.html">ورژن دو</a></li>
+                            <li><a href="index.html">ورژن سه</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">میانبر ها</a>
+                        <ul>
+                            <li><a href="#">Item 2.1</a></li>
+                            <li><a href="#">Item 2.2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">صفحات</a>
+                        <ul>
+                            <li><a href="about-us.html" target="">در باره ما</a></li>
+                            <li><a href="service.html" target="">خدمات</a></li>
+                            <li><a href="meettheteam.html" target="">ملاقات با تیم</a></li>
+                            <li><a href="contact.html" target="">تماس</a></li>
+                            <li><a href="http://project.justdnn.com/hermes/Pages/Portfolio.aspx" target="">نمونه کار</a></li>
+                            <li><a href="pricing.html" target="">جدول قیمت ها</a></li>
+                            <li><a href="oops.html" target="">ارور ۴۰۵</a></li>
+                            <li><a href="FAQ.html" target="" class="selected">اف ای کیو</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">ساختار</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">رنک ها</a>
+                        <ul>
+                            <li><a href="index.html">ابی</a></li>
+                            <li><a href="index.html">قرمز</a></li>
+                            <li><a href="index.html">صورتی</a></li>
+                            <li><a href="index.html">نارنجی</a></li>
+                            <li><a href="index.html">زرد</a></li>
+                            <li><a href="index.html">سبز</a></li>
+                            <li><a href="index.html">قهوه ای</a></li>
+                            <li><a href="index.html">مشکی</a></li>
+                            <li><a href="index.html">بنفش</a></li>
+                            <li><a href="index.html">فیروزه ای</a></li>
+                            <li><a href="index.html">شکلاتی</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+      <!--<span class="navbar-toggler-icon"></span>--><i class="fa fa-align-justify" style=" color: #fff; padding: .7em;"></i>
+   
+    </button>
+
+            <a class="navbar-brand" href="#"><strong>لورم ایپسوم</strong></a>
+        </nav>
+
+        <div class="intro-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="margin-auto" style="margin: 0 auto">
+                        <div id="demo11" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <figure class="position">
+                                        <img src="img/vinkkeja-sisallontuotantoon-elokuu.png" alt="kone" width=100% height="auto" style="filter: brightness(50%);">
+                                        <div class="navbar-text mt-5 mb-5">
+                                            <h3>تولید کننده لورم ایپسوم</h3>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                                گرافیک است </p>
+                                            <a class="button btn-text rounded50 " href="#"> بیشتر بدانید</a>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure class="position">
+                                        <img src="img/vinkkeja-sisallontuotantoon-maaliskuu.jpg" alt="kone" width=100% height="auto" style="filter: brightness(50%);">
+                                        <div class="navbar-text mt-5 mb-5">
+                                            <h3>تولید کننده لورم ایپسوم</h3>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                                گرافیک است </p>
+                                            <a class="button btn-text rounded50 " href="#"> بیشتر بدانید</a>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure class="position">
+                                        <img src="img/omfavnelse.jpg" alt="kone" width=100% height="auto" style="filter: brightness(50%);">
+                                        <div class="navbar-text mt-5 mb-5">
+                                            <h3>تولید کننده لورم ایپسوم</h3>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                                گرافیک است </p>
+                                            <a class="button btn-text rounded50 " href="#"> بیشتر بدانید</a>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo11" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo11" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- end slider -->
+
+    <!-- contact -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="contact-form">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input name="name" id="name" placeholder="اسم" type="text">
+                        </div>
+                        <div class="col-sm-6">
+                            <input name="mail" id="mail" placeholder="ایمیل" type="text">
+                        </div>
+                    </div>
+                    <input name="website" id="website" placeholder="وب سایت" type="text">
+                    <textarea name="comment" id="comment" placeholder="پیشنهاد شما" style="height: 150px;"></textarea>
+                    <div class="submit-area">
+                        <input class="DefaultBackground" id="submit_contact" value="ارسال" type="submit">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="contact-box">
+                    <h3></h3>
+                    <div class="contact-info">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <div class="address box">
+                            <em class="TextColor fa fa-home"></em>
+                            <div>پلاک ۱۹ خیابان پیام انقلاب<br>
+                                میدان حسن آباد خیابان حافظ<br>
+                                تهران</div>
+                        </div>
+                        <div class="email box">
+                            <em class="TextColor fa fa-envelope-o"></em>
+                            <a href="mailto:justdnn100@gmail.com">justdnn100@gmail.com</a>
+                        </div>
+                        <div class="phone box">
+                            <em class="TextColor fa fa-phone"></em>
+                            <div class="number"> تلفن: ۶۵ ۷۷ ۶۵ ۷۷
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <div class="container-fluid footer-top">
+        <div class="row footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 footer mt-5">
+                        <h4>درباره ما</h4>
+                        <div class="footer-item mt-4">
+
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.</p>
+                            <ul class="contact-info">
+                                <li><em class="fa fa-map-marker">&nbsp;</em>11230 Santa Eratern DT, Los Angene</li>
+                                <li><em class="fa fa-phone">&nbsp;</em>+32 010-1234-567</li>
+                                <li><em class="fa fa-envelope-o">&nbsp;</em><a href="mailto:justdnn@gmail.com" style="color: #888;">justdnn100@gmail.com
+                                    </a></li>
+                                <li><em class="fa fa-globe">&nbsp;</em><a href="#" style="color: #888;">www.justdnn.com</a></li>
+                                <li><em class="fa fa-facebook">&nbsp;</em><a href="#" style="color: #888;">www.facebook.com/justdnn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 footer mt-5">
+                        <h4>اخرین اخبار</h4>
+                        <div class="footer-box mb-4  mt-4" style="border-bottom: 1px solid #333;">
+
+
+                            <div class="footer-box-img">
+                                <img alt="" class="img-responsive left" src="img/team-man3.png" width="100px" ;height="150px;">
+                            </div>
+                            <div class="footer-box-text">
+                                <h6><a class="link-text" href="#">کرد موجود مجله</a></h6>
+                                <p>استفاده فارسی امید از طراحی راهکارها شناخت</p>
+                                <span>مهر سال ۹۷</span>
+                            </div>
+                        </div>
+                        <div class="footer-box mt-4">
+
+
+                            <div class="footer-box-img">
+                                <img alt="" class="img-responsive left" src="img/team-man1.png" width="100px" ;height="150px;">
+                            </div>
+                            <div class="footer-box-text">
+                                <h6><a class="link-text" href="#">کرد موجود مجله</a></h6>
+                                <p>استفاده فارسی امید از طراحی راهکارها شناخت</p>
+                                <span>مهر سال ۹۷</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 footer-list mt-5">
+                        <h4>لینک های مفید</h4>
+                        <ul class=" mt-4">
+                            <li><a href="#"><em class="fa fa-angle-right">&nbsp;</em>لورم ایپسوم متن ساختگی</a></li>
+                            <li><a href="#"><em class="fa fa-angle-right">&nbsp;</em> گرافیک کتابهای در</a></li>
+                            <li><a href="#"><em class="fa fa-angle-right">&nbsp;</em>طراحان جامعه ایجاد</a></li>
+                            <li><a href="#"><em class="fa fa-angle-right">&nbsp;</em> صورت خلاقی متن</a></li>
+                            <li><a href="#"><em class="fa fa-angle-right">&nbsp;</em> بیشتری سوالات در</a></li>
+                            <li><a href="#"><em class="fa fa-angle-right">&nbsp;</em> فارسی صورت کاربردهای</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid footer-copyright">
+        <div class="row footer copyright-text">
+            <div class="col-md-12">
+                <p>حقوق این سایت محفوظ میباشد</p>
+            </div>
+        </div>
+        <div class="row footer copyright-list">
+
+            <div class="col-md-12">
+                <a href="#"><em class="fa fa-twitter"> </em></a>
+                <a href="#"><em class="fa fa-facebook"> </em></a>
+                <a href="#"><em class="fa fa-pinterest"> </em></a>
+                <a href="#"><em class="fa fa-linkedin"> </em></a>
+            </div>
+
+        </div>
+    </div>
+</body>
