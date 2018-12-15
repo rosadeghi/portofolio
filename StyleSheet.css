@@ -1,0 +1,89 @@
+﻿.header {
+    background-color:#fff;
+}
+.main{
+    background-color:#f9f9fa;
+    height:600px;
+}
+.login-box{
+    background-color:#fff;
+    margin:10px;
+    height:500px;
+    padding: 0 20px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+.btn-info{
+    color:#003abc;
+    max-width:300px;
+    margin: 0 auto;
+    border-radius:3px;
+    padding:8px;
+    text-align:center;
+}
+
+.row loginbox{
+    /*font-size:12px;
+    text-align:right;
+    padding:10px;
+    margin:20px;
+    display:block;*/
+   
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.login-logo{
+    padding:10px;
+    text-align:center;
+    
+}
+.input{
+    /*border:0;
+    border-bottom:1px solid #cfd2d5;
+    margin: 0 auto;
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 0;*/
+    height: 40px;
+    width:100%;
+    margin:20px 0;
+    border:0;
+    border-bottom:1px solid #17a2b8;
+}
+img{
+    width:35%;
+    
+}
+.loginbox span{
+    display: inline-block;
+    width: 49%;
+    font-size:13px;
+}
+.loginbox span:last-child{
+    text-align:right;
+}
+.loginbox span a{
+    padding-left: 5px;
+
+}
+.btn-info{
+    margin:20px 0;
+}
+span .tick{
+   font-size:20px;
+   color:#a2a6a9;
+}
+ .forget-password{
+     font-size:15px;
+     margin-top:150px;
+}
+ .text{
+     font-size:20px;
+     text-align:left;
+     padding-top:70px;
+ }
+ .description{
+     padding:50px;
+ }
