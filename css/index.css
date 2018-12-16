@@ -86,9 +86,7 @@ content: "";
     background-color: #7a5789;
     display: inline-table; 
 }
-.espace{
-    /*margin-top: 3em;*/
-}
+
 i{
         padding-left: .5em;
 
@@ -98,7 +96,12 @@ i{
 /*-----------------------------------------------------------------------------------*/
 /*  Navbar Top
 /*-----------------------------------------------------------------------------------*/
-
+.fa-align-justify:before {
+    content: "\f039";
+    border: 1px solid;
+    padding: .2em;
+    color: #6e4e7b;
+}
 nav {
     position: fixed;
     background: #fff;
@@ -205,7 +208,7 @@ nav {
     padding: 10px
 } */
   .logo {
-    float: left;
+    /*float: left;*/
   }
   
   .logo img {

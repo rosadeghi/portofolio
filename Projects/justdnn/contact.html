@@ -20,32 +20,29 @@
             background: #4a7aec;
             color: #fff !important;
         }
-        
         #tabs .ui-tabs-active a {
             color: #fff !important;
         }
-        
         #tabs-b .ui-tabs-active {
             background: #4a7aec;
             color: #fff !important;
         }
-        
         #tabs-b .ui-tabs-active a {
             color: #fff !important;
         }
         /* .box-class{
-    background-color: #fff;
-    color: #4a7aec;
-    border: #4a7aec;
-    } */
-        
-        .add-class {
+        background-color: #fff;
+        color: #4a7aec;
+        border: #4a7aec;
+        } */
+        .add-class{
             background-color: #fff;
             color: #4a7aec;
-            border: 3px solid #4a7aec;
+            border:3px solid #4a7aec;
             /* box-shadow: 10px 10px 5px #888; */
         }
-    </style>
+        
+        </style>
 
 
     <link href="./Content/font-awesome.min.css" rel="stylesheet" />
@@ -161,11 +158,12 @@
                 });
             });
         });
+
     </script>
 </head>
 
 <body>
-    <!-- hederinfo -->
+   <!-- hederinfo -->
     <header style="padding: 0px;">
 
         <nav class="navbar fixed-top navbar-expand-lg " style="background: #343a40">
@@ -196,14 +194,14 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">صفحات</a>
                         <ul>
-                            <li><a href="about-us.html" target="">در باره ما</a></li>
-                            <li><a href="service.html" target="">خدمات</a></li>
-                            <li><a href="meettheteam.html" target="">ملاقات با تیم</a></li>
-                            <li><a href="contact.html" target="">تماس</a></li>
-                            <li><a href="http://project.justdnn.com/hermes/Pages/Portfolio.aspx" target="">نمونه کار</a></li>
-                            <li><a href="pricing.html" target="">جدول قیمت ها</a></li>
-                            <li><a href="oops.html" target="">ارور ۴۰۵</a></li>
-                            <li><a href="FAQ.html" target="" class="selected">اف ای کیو</a></li>
+                            <li><a href="about-us.html" target="_blank">در باره ما</a></li>
+                            <li><a href="service.html" target="_blank">خدمات</a></li>
+                            <li><a href="meettheteam.html" target="_blank">ملاقات با تیم</a></li>
+                            <li><a href="contact.html" target="_blank">تماس</a></li>
+                            <li><a href="#" target="_blank">نمونه کار</a></li>
+                            <li><a href="pricing.html" target="_blank">جدول قیمت ها</a></li>
+                            <li><a href="oops.html" target="_blank">ارور ۴۰۵</a></li>
+                            <li><a href="FAQ.html" target="_blank" class="selected">اف ای کیو</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">ساختار</a></li>
@@ -296,183 +294,57 @@
     </header>
     <!-- end slider -->
 
-    <!-- meet our team -->
-    <div class="container">
-        <div class="row team-box-titre mt-5 mb-2">
-            <div class="col-md-12">
-                <h1>پیوسته استفاده است</h1>
-            </div>
-        </div>
-        <div class="row team-box-explain">
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. کتابهای زیادی در
-                شصت و سه درصد گذشته، حال تا با نرم افزارها شناخت بیشتری را برای کرد</p>
-        </div>
-        <div class="row mt-4 mb-4">
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team01.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
-                            </div>
+    <!-- contact -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="contact-form">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input name="name" id="name" placeholder="اسم" type="text">
+                        </div>
+                        <div class="col-sm-6">
+                            <input name="mail" id="mail" placeholder="ایمیل" type="text">
                         </div>
                     </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    <input name="website" id="website" placeholder="وب سایت" type="text">
+                    <textarea name="comment" id="comment" placeholder="پیشنهاد شما" style="height: 150px;"></textarea>
+                    <div class="submit-area">
+                        <input class="DefaultBackground" id="submit_contact" value="ارسال" type="submit">
                     </div>
-                </figure>
+                </div>
+
             </div>
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team02.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
+            <div class="col-md-4">
+                <div class="contact-box">
+                    <h3></h3>
+                    <div class="contact-info">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <div class="address box">
+                            <em class="TextColor fa fa-home"></em>
+                            <div>پلاک ۱۹ خیابان پیام انقلاب<br>
+                                میدان حسن آباد خیابان حافظ<br>
+                                تهران</div>
+                        </div>
+                        <div class="email box">
+                            <em class="TextColor fa fa-envelope-o"></em>
+                            <a href="mailto:justdnn100@gmail.com">justdnn100@gmail.com</a>
+                        </div>
+                        <div class="phone box">
+                            <em class="TextColor fa fa-phone"></em>
+                            <div class="number"> تلفن: ۶۵ ۷۷ ۶۵ ۷۷
                             </div>
                         </div>
+
                     </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team03.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team04.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-                    </div>
-                </figure>
-            </div>
-        </div>
-        <div class="row mt-4 mb-4">
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team04.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team03.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team02.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-sm-3">
-                <figure class="team-box">
-                    <div class="team-img">
-                        <img alt="" src="http://project.justdnn.com/Portals/6/images/team01.jpg" width="100%;" height="auto">
-                        <div class="team-mask">
-                            <div class="team-social social">
-                                <a class="fa fa-facebook" href="#"></a>
-                                <a class="fa fa-linkedin" href="#"></a>
-                                <a class="fa fa-dribbble" href="#"></a>
-                                <a class="fa fa-twitter" href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-team red">
-                        <h5>برنی کلر</h5>
-                        <h6>مدیر</h6>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-                    </div>
-                </figure>
+                </div>
             </div>
         </div>
     </div>
-    <!-- end meet our teem -->
+    <!-- end contact -->
+
     <!-- footer -->
     <div class="container-fluid footer-top">
         <div class="row footer">
@@ -482,8 +354,8 @@
                         <h4>درباره ما</h4>
                         <div class="footer-item mt-4">
 
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.</p>
                             <ul class="contact-info">
                                 <li><em class="fa fa-map-marker">&nbsp;</em>11230 Santa Eratern DT, Los Angene</li>
                                 <li><em class="fa fa-phone">&nbsp;</em>+32 010-1234-567</li>

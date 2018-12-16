@@ -34,10 +34,10 @@
             color: #fff !important;
         }
         /* .box-class{
-background-color: #fff;
-color: #4a7aec;
-border: #4a7aec;
-} */
+    background-color: #fff;
+    color: #4a7aec;
+    border: #4a7aec;
+    } */
         
         .add-class {
             background-color: #fff;
@@ -117,16 +117,16 @@ border: #4a7aec;
 
 
 
-        $(document).ready(function () {
-            $('.dropdown').click(
-                function () {
-                    $(this).children('.sub-menu').slideDown(400);
-                },
-                function () {
-                    $(this).children('.sub-menu').slideUp(200);
-                }
-            );
-        });
+        // $(document).ready(function() {
+        //     $('.dropdown').click (
+        //         function(){
+        //             $(this).children('.sub-menu').slideDown(400);
+        //         },
+        //         function(){
+        //             $(this).children('.sub-menu').slideUp(200);
+        //         }
+        //     );
+        // });
 
 
         $(document).ready(function () {
@@ -152,8 +152,7 @@ border: #4a7aec;
 </head>
 
 <body>
-
-    <!-- hederinfo -->
+  <!-- hederinfo -->
     <header style="padding: 0px;">
 
         <nav class="navbar fixed-top navbar-expand-lg " style="background: #343a40">
@@ -184,14 +183,14 @@ border: #4a7aec;
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">صفحات</a>
                         <ul>
-                            <li><a href="about-us.html" target="">در باره ما</a></li>
-                            <li><a href="service.html" target="">خدمات</a></li>
-                            <li><a href="meettheteam.html" target="">ملاقات با تیم</a></li>
-                            <li><a href="contact.html" target="">تماس</a></li>
-                            <li><a href="http://project.justdnn.com/hermes/Pages/Portfolio.aspx" target="">نمونه کار</a></li>
-                            <li><a href="pricing.html" target="">جدول قیمت ها</a></li>
-                            <li><a href="oops.html" target="">ارور ۴۰۵</a></li>
-                            <li><a href="FAQ.html" target="" class="selected">اف ای کیو</a></li>
+                            <li><a href="about-us.html" target="_blank">در باره ما</a></li>
+                            <li><a href="service.html" target="_blank">خدمات</a></li>
+                            <li><a href="meettheteam.html" target="_blank">ملاقات با تیم</a></li>
+                            <li><a href="contact.html" target="_blank">تماس</a></li>
+                            <li><a href="#" target="_blank">نمونه کار</a></li>
+                            <li><a href="pricing.html" target="_blank">جدول قیمت ها</a></li>
+                            <li><a href="oops.html" target="_blank">ارور ۴۰۵</a></li>
+                            <li><a href="FAQ.html" target="_blank" class="selected">اف ای کیو</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">ساختار</a></li>
@@ -284,202 +283,135 @@ border: #4a7aec;
     </header>
     <!-- end slider -->
 
-
-    <!-- our website -->
+    <!-- portfolio -->
     <div class="container">
-        <div class="row  home-aboutus">
-            <div class="col-md-12 top-part">
-                <h2>به وبسایت ما خوش امدید</h2>
+        <div class="row">
+            <div class="col-md-12 price">
+                <h1>سادگی طراحی</h1>
+                <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12 right-part mb-5">
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
-                    بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-                    متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-                <img src="img/welcome01.jpg" width="100%" height="auto">
-            </div>
-            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12 left-part mb-5">
-                <div class="container">
-                    <div class="col-md-6" style="width: 50%;float:right;">
-                        <div class="home-aboutus-box">
-                            <em class="TextColor fa fa-clock-o"></em>
-                            <h6>لورم ایپسوم متن ساختگی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="width: 50%; float:right;">
-                        <div class="home-aboutus-box">
-                            <em class="TextColor fa fa-clock-o"></em>
-                            <h6>لورم ایپسوم متن ساختگی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="width: 50%; float:right;">
-                        <div class="home-aboutus-box">
-                            <em class="TextColor fa fa-clock-o"></em>
-                            <h6>لورم ایپسوم متن ساختگی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="width: 50%; float:right;">
-                        <div class="home-aboutus-box">
-                            <em class="TextColor fa fa-clock-o"></em>
-                            <h6>لورم ایپسوم متن ساختگی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </div>
-                    </div>
+        <div class="row mb-5">
+            <div class="col-sm-3">
+                <div class="gird-item">
+                    <img src="http://demo3.justdnn.com/portals/13/images/Twinks-gallery01.jpg" width="100%;" height="auto">
+                    <div class="hover-icon">
+                        <div class="box">
+                            <a href="http://demo3.justdnn.com/portals/13/images/Twinks-gallery01.jpg" rel="portfolio" class="fancybox"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a></div>
 
+                    </div>
+                    <div class="hover-text">
+                        <h5>سادگی طراحی</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="gird-item">
+                    <img alt="" src="http://demo3.justdnn.com/portals/13/images/Twinks-gallery02.jpg" width="100%;" height="auto">
+                    <div class="hover-icon">
+                        <div class="box">
+                            <a href="http://demo3.justdnn.com/portals/13/images/Twinks-gallery02.jpg" rel="portfolio" class="fancybox"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>
+                    </div>
+                    <div class="hover-text">
+                        <h5>Awesome Image</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="gird-item">
+                    <img alt="" src="http://demo3.justdnn.com/portals/13/images/Twinks-gallery03.jpg" width="100%;" height="auto">
+                    <div class="hover-icon">
+                        <div class="box">
+                            <a href="http://demo3.justdnn.com/portals/13/images/Twinks-gallery03.jpg" rel="portfolio" class="fancybox"><span class="fa fa-search"></span></a><a href="#"><span class="fa fa-link"></span></a></div>
+                    </div>
+                    <div class="hover-text">
+                        <h5>Awesome Image</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="gird-item">
+                    <img alt="" src="http://demo3.justdnn.com/portals/13/images/Twinks-gallery04.jpg" width="100%;" height="auto">
+                    <div class="hover-icon">
+                        <div class="box">
+                            <a href="http://demo3.justdnn.com/portals/13/images/Twinks-gallery04.jpg" rel="portfolio" class="fancybox"><span class="fa fa-search"></span></a><a href="#"><span class="fa fa-link"></span></a></div>
+                    </div>
+                    <div class="hover-text">
+                        <h5>Awesome Image</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end our website -->
 
-
-    <!-- mileston conter (parallax3) -->
-    <div class="container-fluid  mb-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="parallax3">
-                    <div class="ParallaxCover1"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="text-parallax-3">
-                                    <h1>
-                                        راه آسان برای ساخت وب سایت های خلاق</h1>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                        است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" style="padding-top:2em; padding-bottom: 7em;">
-
-                            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4">
-                                <div class="milestone-counter">
-                                    <strong class="TextColor stat-count">844</strong>
-                                    <span class="milestone-details">در دستاوردهای می طلبد فراوان</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4">
-                                <div class="milestone-counter">
-                                    <strong class="TextColor stat-count">844</strong>
-                                    <span class="milestone-details">در دستاوردهای می طلبد فراوان</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4">
-                                <div class="milestone-counter">
-                                    <strong class="TextColor stat-count">844</strong>
-                                    <span class="milestone-details"> در دستاوردهای می طلبد فراوان</span>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- end mileston conter (parallax3) -->
-
-    <!-- faq and latest news -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div id="accordion" style="padding: 0">
-                    <!-- <h3 class="accordion-titre"><em class="fa-arrow-circle-o-right"></em><a href="#">Section 1</a></h3> -->
-                    <h3 class="accordion-titre"><em class="fa fa-arrow-circle-o-down accordion2-em"></em><a href="#">Section 1</a></h3>
-
-                    <div>
-                        <p>
-                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida
-                            in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                        </p>
-                    </div>
-                    <!-- <h3 class="accordion-titre"><em class="fa-arrow-circle-o-right"></em><a href="#">Section 1</a></h3> -->
-                    <h3 class="accordion-titre"><em class="fa fa-arrow-circle-o-down accordion2-em"></em><a href="#">Section 1</a></h3>
-
-                    <div>
-                        <p>
-                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida
-                            in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                        </p>
-                    </div>
-                    <!-- <h3 class="accordion-titre"><em class="fa-arrow-circle-o-right"></em><a href="#">Section 1</a></h3> -->
-                    <h3 class="accordion-titre"><em class="fa fa-arrow-circle-o-down accordion2-em"></em><a href="#">Section 1</a></h3>
-                    <div>
-                        <p>
-                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida
-                            in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                        </p>
-                    </div>
-
-                    <!-- <h3 class="accordion-titre"><em class="fa-arrow-circle-o-right"></em><a href="#">Section 1</a></h3> -->
-                    <h3 class="accordion-titre"><em class="fa fa-arrow-circle-o-down accordion2-em"></em><a href="#">Section 1</a></h3>
-                    <div>
-                        <p style="height: 150px;">
-                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida
-                            in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                        </p>
-                    </div>
-
-
-                    <!-- <h3 class="accordion-titre"><em class="fa-arrow-circle-o-right"></em><a href="#">Section 1</a></h3> -->
-                    <h3 class="accordion-titre"><em class="fa fa-arrow-circle-o-down accordion2-em"></em><a href="#">Section 1</a></h3>
-                    <div>
-                        <p>
-                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida
-                            in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                        </p>
-                    </div>
-
-
-                </div>
-
+            <div class="col-md-12 price">
+                <h1>سادگی طراحی</h1>
+                <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
             </div>
-            <div class="col-sm-6">
+        </div>
+        <div class="row">
+            <div class="col-sm-6 FeaturedWorks">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="our-news-box">
-                                <div class="our-news-image"><img alt="" src="img/Welens-Project03 (1).jpg" width="100%;" height="auto"></div>
-                                <div class="our-news-details">
-                                    <span>۱۳۹۷ ۱۴ مهر</span>
-                                    <h6><a href="#">برای ابزارهای و پایان</a></h6>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ طراحان گرافیک است</p>
-                                    <a href="#" class="more">ادامه مطلب</a>
+                        <div class="col-sm-6">
+                            <div class="box bg-white box1">
+                                <img src="img/welens-service01.jpg" class="image" width="100%;" height="auto">
+                                <div class="mask">
+                                    <div class="box">
+                                        <a class="fancybox" rel="works" href="http://demo2.justdnn.com/Portals/10/images/vision-FeaturedWorks03.jpg"><span class="fa fa-search"></span></a><a href="#"><span class="fa fa-link"></span></a></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="our-news-box">
-                                <div class="our-news-image"><img alt="" src="img/Welens-Project03 (1).jpg" width="100%;" height="auto"></div>
-                                <div class="our-news-details">
-                                    <span>۱۳۹۷ ۱۴ مهر</span>
-                                    <h6><a href="#">برای ابزارهای و پایان</a></h6>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ طراحان گرافیک است</p>
-                                    <a href="#" class="more">ادامه مطلب</a>
-                                </div>
+                        <div class="col-sm-6">
+                            <div class="text">
+                                <h5>The Feature</h5>
+                                <p>Lorem ipsum dolor sit amet conse ctetu erdip iscing elit sed diam nonue lumemy nibh euismod</p>
+                                <a class="linkstyle1" href="#">More</a>
+                                <em class="fa fa-caret-right arrow">&nbsp;</em>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
+            <div class="col-sm-6 FeaturedWorks">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="box bg-white box1">
+                                <img src="img/welens-service01.jpg" class="image" width="100%;" height="auto">
+                                <div class="mask">
+                                    <div class="box">
+                                        <a class="fancybox" rel="works" href="http://demo2.justdnn.com/Portals/10/images/vision-FeaturedWorks03.jpg"><span class="fa fa-search"></span></a><a href="#"><span class="fa fa-link"></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text">
+                                <h5>The Feature</h5>
+                                <p>Lorem ipsum dolor sit amet conse ctetu erdip iscing elit sed diam nonue lumemy nibh euismod</p>
+                                <a class="linkstyle1" href="#">More</a>
+                                <em class="fa fa-caret-right arrow">&nbsp;</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+    <!-- end portfplio -->
+
+
+
     <!-- footer -->
     <div class="container-fluid footer-top">
         <div class="row footer">
@@ -495,7 +427,7 @@ border: #4a7aec;
                                 <li><em class="fa fa-map-marker">&nbsp;</em>11230 Santa Eratern DT, Los Angene</li>
                                 <li><em class="fa fa-phone">&nbsp;</em>+32 010-1234-567</li>
                                 <li><em class="fa fa-envelope-o">&nbsp;</em><a href="mailto:justdnn@gmail.com" style="color: #888;">justdnn100@gmail.com
-                                    </a></li>
+                            </a></li>
                                 <li><em class="fa fa-globe">&nbsp;</em><a href="#" style="color: #888;">www.justdnn.com</a></li>
                                 <li><em class="fa fa-facebook">&nbsp;</em><a href="#" style="color: #888;">www.facebook.com/justdnn</a></li>
                             </ul>
@@ -544,6 +476,7 @@ border: #4a7aec;
         </div>
 
     </div>
+
     <div class="container-fluid footer-copyright">
         <div class="row footer copyright-text">
             <div class="col-md-12">
