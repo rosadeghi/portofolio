@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>psychology</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+    <!-- owl carousel -->
+
+    <!-- <script src="https://stackoverflow.com/questions/32405812/failed-to-load-resource-neterr-file-not-found-loading-json-js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.5.15.min.css" rel="stylesheet">
+    <link href="./Content/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="./css/bootstrap4.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+ <!-- header  -->
+ <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <body class="hidden-sn mdb-skin">
+
+                    <!--Double navigation-->
+                    <header>
+                        <!-- Sidebar navigation -->
+                        <div id="slide-out" class="side-nav sn-bg-4">
+                            <ul class="custom-scrollbar">
+                                <!-- Logo -->
+                                <li>
+                                    <div class="logo-wrapper waves-light">
+                                        <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+                                                class="img-fluid flex-center"></a>
+                                    </div>
+                                </li>
+                                <!--/. Logo -->
+                                <!--Social-->
+                                <li>
+                                    <ul class="social">
+                                        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                                        <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                                        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                                        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                                    </ul>
+                                </li>
+                                <!--/Social-->
+                                <!--Search Form-->
+                                <li>
+                                    <form class="search-form" role="search">
+                                        <div class="form-group md-form mt-0 pt-1 waves-light">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </form>
+                                </li>
+                                <!--/.Search Form-->
+                                <!-- Side navigation links -->
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>
+                                                Submit
+                                                blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">Submit listing</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Registration form</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i>
+                                                Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">For bloggers</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">For authors</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i>
+                                                About<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">Introduction</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Monthly meetings</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i>
+                                                Contact me<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--/. Side navigation links -->
+                            </ul>
+                            <div class="sidenav-bg mask-strong"></div>
+                        </div>
+                        <!--/. Sidebar navigation -->
+                        <!-- Navbar -->
+                        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+                            <!-- SideNav slide-out button -->
+
+                            <!-- Breadcrumb-->
+                            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="pindex.html" target="blank"><i class="fa fa-home"></i> <span class="clearfix d-none d-sm-inline-block">صفحه اصلی</span></a>
+                                        </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" target="black"><i class="fa fa-envelope"></i>
+                                        <span class="clearfix d-none d-sm-inline-block">تماس با ما</span></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html" target="black"><i class="fa fa-user"></i>
+                                        <span class="clearfix d-none d-sm-inline-block">درباره ما</span></a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">نظرات</span></a>
+                                </li> -->
+                                 <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        لینک ها
+                                    </a>
+                                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div> 
+                                </li> -->
+                            </ul>
+                            <div class="breadcrumb-dn mr-auto">
+                                <h5>من به پروانه شدن می اندیشم</h5>
+                            </div>
+
+                            <!-- <div class="float-left">
+                                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                            </div> -->
+                        </nav>
+                        <!-- /.Navbar -->
+                    </header>
+                    <!--/.Double navigation-->
+
+                    <!--Main Layout-->
+                    <main>
+
+                    </main>
+                    <!--Main Layout-->
+
+                </body>
+            </div>
+        </div>
+    </div>
+
+    <!-- header  -->
+
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100 img-fluid" src="img/slide3.jpg" alt="First slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption animated fadeInDown">
+                    <h3 class="h3-responsive">مشاوره خانواده,ازدواج و طلاق
+                    </h3>
+                    <h4 class="h3-responsive">مشاوره تحصیلی جهت انتخاب بهتر رشته تحصیلی و یا مهارت های تخصصی.
+
+                        </h4>
+                    <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100 img-fluid" src="img/02.jpg" alt="Second slide">
+                    <div class="mask "></div>
+                </div>
+                <div class="carousel-caption animated fadeInDown">
+                    <h3 class="h3-responsive">مشاوره کودک و نوجوان
+                    </h3>
+                    <h4 class="h3-responsive">
+                        از طریق روانشناسی کودک با خصوصیات رشد و رفتاری کودکان خود آشنا شوید.</h4>
+                    <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100 img-fluid" src="img/audio-conferencing.jpg" alt="Third slide">
+                    <div class="mask rgba-black-slight"></div>
+                </div>
+                <div class="carousel-caption animated fadeInDown">
+                    <h3 class="h3-responsive">مشاوره تلفنی
+                    </h3>
+                    <h4 class="h3-responsive">مشاوره تلفنی ,مشاوره خانواده،مشاوره ازدواج،مشاوره فردی،و...
+
+                        </h4>
+                    <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                </div>
+            </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <!-- contact us -->
+    <div class="container-fluid mt-5 mb-5">
+    <div class="row">
+            <div class="col-md-12">
+    <!--Section: Contact v.1-->
+    <section class="section pb-5">
+
+        <!--Section heading-->
+        <h2 class="section-heading h1 pt-4">تماس با ما</h2>
+        <!--Section description-->
+        <p class="section-description pb-4">کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی.</p>
+    
+        <div class="row">
+    
+        <!--Grid column-->
+        <div class="col-lg-5 mb-4 mt-4">
+    
+            <!--Form with header-->
+            <div class="card">
+    
+            <div class="card-body">
+                <!--Header-->
+                <div class="form-header blue accent-1 ">
+                <h3><i class="fa fa-envelope"> تماس با ما</i></h3>
+                </div>
+    
+                <p>ما به ندرت خواهیم نوشت، اما فقط بهترین مطالب</p>
+                <br>
+    
+                <!--Body-->
+                <div class="md-form">
+                <label for="form-name">نام</label>
+                <input type="text" id="form-name" class="form-control">
+                <i class="fa fa-user prefix grey-text"></i> 
+                </div>
+    
+                <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="text" id="form-email" class="form-control">
+                <label for="form-email">ایمیل</label>
+                </div>
+    
+                <div class="md-form">
+                <i class="fa fa-tag prefix grey-text"></i>
+                <input type="text" id="form-Subject" class="form-control">
+                <label for="form-Subject">موضوع</label>
+                </div>
+    
+                <div class="md-form">
+                <i class="fa fa-pencil prefix grey-text"></i>
+                <textarea type="text" id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                <label for="form-text">پیام</label>
+                </div>
+    
+                <div class="text-center mt-4">
+                <button class="btn btn-light-blue">ارسال</button>
+                </div>
+    
+            </div>
+    
+            </div>
+            <!--Form with header-->
+    
+        </div>
+        <!--Grid column-->
+    
+        <!--Grid column-->
+        <div class="col-lg-7">
+    
+            <!--Google map-->
+            <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+            
+                    <iframe class="map" style="    width: 100%;
+                    height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51823.806073960906!2d51.36749912138566!3d35.72651660667735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0131020a7e99%3A0xe216e6caccba8e38!2sDistrict+6%2C+Tehran%2C+Tehran+Province%2C+Iran!5e0!3m2!1sen!2s!4v1541249401683"
+                        frameborder="0" allowfullscreen></iframe>
+            
+            </div>
+    
+            <br>
+            <!--Buttons-->
+            <div class="row text-center">
+            <div class="col-md-4 map-text">
+                <a class="btn-floating blue accent-1"><i class="fa fa-map-marker"></i></a>
+                <p>د.لت آباد  شهرری</p>
+                <p>تهران</p>
+            </div>
+    
+            <div class="col-md-4 map-text">
+                <a class="btn-floating blue accent-1"><i class="fa fa-phone"></i></a>
+                <p>+ 01 234 567 89</p>
+                <p>دوشمبه , 8:00-22:00</p>
+            </div>
+    
+            <div class="col-md-4 map-text">
+                <a class="btn-floating blue accent-1"><i class="fa fa-envelope"></i></a>
+                <p>info@gmail.com</p>
+                <p>sale@gmail.com</p>
+            </div>
+            </div>
+    
+        </div>
+        <!--Grid column-->
+    
+        </div>
+    
+    </section>
+    <!--Section: Contact v.1-->
+
+            </div>
+        </div>
+    </div>
+    <!-- contact us -->
+
+
+     <!-- Footer -->
+     <footer class="page-footer font-small  pt-4 mt-5">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+        <!-- Footer links -->
+        <div class="row text-center text-md-right mt-3 pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" >
+            <h6 class="text-uppercase mb-4 font-weight-bold">روانشناسی</h6>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">زمینه فعالیت</h6>
+            <p>
+                <a href="#!">روانشناسی و مشاوره</a>
+            </p>
+            <p>
+                <a href="#!">مشاوره تحصیلی وانتخاب رشته</a>
+            </p>
+            <p>
+                <a href="#!">آموزش و کلاس های تقویتی</a>
+            </p>
+            <p>
+                <a href="#!">مشاوره تلفنی</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">لینک ها</h6>
+            <p>
+                <a href="#!">Your Account</a>
+            </p>
+            <p>
+                <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+                <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+                <a href="#!">Help</a>
+            </p>
+            </div>
+
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">تماس با ما</h6>
+            <p>
+                <i class="fa fa-home mr-3"></i> تهران شهر ری</p>
+            <p>
+                <i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p>
+                <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Footer links -->
+
+       
+
+      
+
+        </div>
+        <!-- Footer Links -->
+<div class="container-fluid" style="    background: #1e2e3e;">
+
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center" style="    padding-top: 1em;">
+      
+
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+
+            <!--Copyright-->
+            <p class="text-center text-md-center">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/">
+                <strong> MDBootstrap.com</strong>
+                </a>
+            </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                </ul>
+            </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+</div>
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script -->
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+      <!-- owl carousel -->
+      <script src="./js/owl.carousel.js"></script>
+      
+      <!-- owl carousel -->
+    <script src="./js/mdb.min.js"></script>
+    <script src="./js/bootstrap4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  
+
+
+</body>

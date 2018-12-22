@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>psychology</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+    <!-- owl carousel -->
+
+    <!-- <script src="https://stackoverflow.com/questions/32405812/failed-to-load-resource-neterr-file-not-found-loading-json-js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.5.15.min.css" rel="stylesheet">
+    <link href="./Content/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="./css/bootstrap4.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- header  -->
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+    
+                    <body class="hidden-sn mdb-skin">
+    
+                        <!--Double navigation-->
+                        <header>
+                            <!-- Sidebar navigation -->
+                            <div id="slide-out" class="side-nav sn-bg-4">
+                                <ul class="custom-scrollbar">
+                                    <!-- Logo -->
+                                    <li>
+                                        <div class="logo-wrapper waves-light">
+                                            <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+                                                    class="img-fluid flex-center"></a>
+                                        </div>
+                                    </li>
+                                    <!--/. Logo -->
+                                    <!--Social-->
+                                    <li>
+                                        <ul class="social">
+                                            <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                                            <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                                            <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                                            <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                                        </ul>
+                                    </li>
+                                    <!--/Social-->
+                                    <!--Search Form-->
+                                    <li>
+                                        <form class="search-form" role="search">
+                                            <div class="form-group md-form mt-0 pt-1 waves-light">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <!--/.Search Form-->
+                                    <!-- Side navigation links -->
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>
+                                                    Submit
+                                                    blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#" class="waves-effect">Submit listing</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">Registration form</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i>
+                                                    Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#" class="waves-effect">For bloggers</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">For authors</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i>
+                                                    About<i class="fa fa-angle-down rotate-icon"></i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#" class="waves-effect">Introduction</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">Monthly meetings</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i>
+                                                    Contact me<i class="fa fa-angle-down rotate-icon"></i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#" class="waves-effect">FAQ</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">Write a message</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">FAQ</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">Write a message</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">FAQ</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">Write a message</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">FAQ</a>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect">Write a message</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--/. Side navigation links -->
+                                </ul>
+                                <div class="sidenav-bg mask-strong"></div>
+                            </div>
+                            <!--/. Sidebar navigation -->
+                            <!-- Navbar -->
+                            <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+                                <!-- SideNav slide-out button -->
+    
+                                <!-- Breadcrumb-->
+                                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="index.html" target="blank"><i class="fa fa-home"></i> <span class="clearfix d-none d-sm-inline-block">صفحه اصلی</span></a>
+                                            </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html" target="black"><i class="fa fa-envelope"></i>
+                                            <span class="clearfix d-none d-sm-inline-block">تماس با ما</span></a>
+                                    </li>
+    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html" target="black"><i class="fa fa-user"></i>
+                                            <span class="clearfix d-none d-sm-inline-block">درباره ما</span></a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">نظرات</span></a>
+                                    </li> -->
+                                     <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            لینک ها
+                                        </a>
+                                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div> 
+                                    </li> -->
+                                </ul>
+                                <div class="breadcrumb-dn mr-auto">
+                                    <h5>من به پروانه شدن می اندیشم</h5>
+                                </div>
+    
+                                <!-- <div class="float-left">
+                                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                                </div> -->
+                            </nav>
+                            <!-- /.Navbar -->
+                        </header>
+                        <!--/.Double navigation-->
+    
+                        <!--Main Layout-->
+                        <main>
+    
+                        </main>
+                        <!--Main Layout-->
+    
+                    </body>
+                </div>
+            </div>
+        </div>
+    
+        <!-- header  -->
+    
+    
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <img class="d-block w-100 img-fluid" src="img/slide3.jpg" alt="First slide">
+                        <div class="mask "></div>
+                    </div>
+                    <div class="carousel-caption animated fadeInDown">
+                        <h3 class="h3-responsive">مشاوره خانواده,ازدواج و طلاق
+                        </h3>
+                        <h4 class="h3-responsive">مشاوره تحصیلی جهت انتخاب بهتر رشته تحصیلی و یا مهارت های تخصصی.
+    
+                            </h4>
+                        <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100 img-fluid" src="img/02.jpg" alt="Second slide">
+                        <div class="mask "></div>
+                    </div>
+                    <div class="carousel-caption animated fadeInDown">
+                        <h3 class="h3-responsive">مشاوره کودک و نوجوان
+                        </h3>
+                        <h4 class="h3-responsive">
+                            از طریق روانشناسی کودک با خصوصیات رشد و رفتاری کودکان خود آشنا شوید.</h4>
+                        <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100 img-fluid" src="img/audio-conferencing.jpg" alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    <div class="carousel-caption animated fadeInDown">
+                        <h3 class="h3-responsive">مشاوره تلفنی
+                        </h3>
+                        <h4 class="h3-responsive">مشاوره تلفنی ,مشاوره خانواده،مشاوره ازدواج،مشاوره فردی،و...
+    
+                            </h4>
+                        <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                    </div>
+                </div>
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+
+    <!-- main-content -->
+    <div class="container-fluid">
+            <div class="row mt-5">
+                
+                    <div class="col-md-12">
+                            <div class="container first-part-img">
+                                    <img src="img/212122.jpg" width="100%">
+                                </div>
+                    </div>
+            </div>
+
+                <div class="row mt-5">
+                <div class="col-md-12">
+                        <div class="container main-content first-part-content">
+                                <h4 class="mb-4">مشاوره ازدواج</h4>
+                                  <div class="title-box"></div>
+                                <p>مشاوره ازدواج به زوجین کمک می‌کند تا به شناخت بهتری به همسر خود دست یابند و عاقلانه‌تر برای زندگی مشترک آینده‌ی خود تصمیم‌گیری کنند.</p>
+                                <p>روانشناسان متعددی در نقاط مختلف کشور وجود دارند  که همه می‌توانند به آنها مراجعه کرده و مشکلات خود را با آنها در میان بگذارند. اشاره به این نکته ضروری است که هر مشکلی یک راه‌حلی دارد اما اینکه آن راه‌حل چگونه و به چه شکل باشد مهم است. به همین دلیل هر مشاور با مشاور دیگر متفاوت است و کیفیت خاص خود را دارد. مشاور ازدواج ویژگی‌هایی دارد که آن را از بقیه متمایز می‌کند. صیر و شکیبایی، تجربه و تحقیق، نوع یرخورد و شیوه بیان و رازداری و امانت‌داری از مهمترین ویژگی‌های یک مشاور ازدواج خوب هستند.</p>
+                                <p>اصولا مشاوره قبل از ازدواج باید خواسته‌ای از سمت دو طرف باشد و حضور یکی از زوجین به تنهایی بی‌تاثیر است حتی اگر شخص پیش بهترین دکتر روانشناس برای مشاوره ازدواج مراجعه کند اگر خودش تلاشی برای تغییر نکند دکتر روانشناس قطعا نمی‌تواند برای او معجزه کند.
+            
+                                باید همکاری و خواست قلبی دو طرف باشد تا قدم به قدم اشخاص برای ازدواج بدون شکست آماده شوند. نکته قابل توجه، مقاومت طرفین برای مراجعه نکردن به مشاور  است که این مساله خود می‌تواند نشان از مشکل داشته باشد.</p>
+                        <h4>چه کسانی به مشاوره ازدواج نیاز دارند؟</h4>
+                        <p>متاسفانه بیشتر ازدواج ها موفق نیستند. هر فردی نظرات،ارزش ها، باورها و عادات خانوادگی مخصوص به خود را دارد که می توانند ازدواج او را تحت تاثیر قرار دهند. این عادات و رفتارها همواره مطابق سلیقه ی شریک زندگی نیستند اما این بدان معنا نیست که لزوما موجب بروز اختلاف می شوند برعکس این اختلاف نظرات هستند که می توانند تکمیل کننده ی روابط زوجین باشند و به آن ها یاد دهند تا با سایر فرهنگ ها و عقاید نیز آشنا شوند و به آن ها احترام بگذارند. این تفاوت ها و اختلاف نظرات می توانند روابط زوجین را محک بزنند.</p>
+                            </div>
+                </div>
+                </div>
+           
+    </div>
+    <!-- main-content -->
+
+    
+    <!--accordion  Card -->
+    <div class="container-fluid mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12" style="    padding: 0;
+                ">
+                    <div class="card card-image" style="background-image: url(img/kelseyandrew_wedding_blush475.JPG">
+    
+                        <!-- Content -->
+                        <div class=" py-5 px-4">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-10 col-xl-8">
+    
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion md-accordion accordion-5" id="accordionEx5" role="tablist"
+                                        aria-multiselectable="true">
+    
+                                        <!-- Accordion card -->
+                                        <div class="card mb-4">
+    
+                                            <!-- Card header -->
+                                            <div class="card-header p-0 z-depth-1" role="tab" id="heading28">
+                                                <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse28"
+                                                    aria-expanded="true" aria-controls="collapse28">
+                                                    <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                    <!-- <i class="fa fa-heartbeat fa-2x p-3 mr-4 float-left black-text"
+                                                        aria-hidden="true"></i> -->
+                                                    <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                            هدف ازمشاوره قبل از ازدواج چیست؟
+                                                    </h6>
+                                                    
+                                                </a>
+                                            </div>
+    
+                                            <!-- Card body -->
+                                            <div id="collapse28" class="collapse show" role="tabpanel" aria-labelledby="heading28"
+                                                data-parent="#accordionEx5">
+                                                <div class="card-body  white-text z-depth-1">
+                                                <h4>مشاوره قبل از ازدواج دارای 3 هدف اساسی است:</h4> 
+                                                <ul>
+                                                    <li>بررسی آمادگی  نامزدها برای ازدواج</li>
+                                                    <li>ارزیابی هم کف بودن و یا هماهنگی و همسانی نامزدها</li>
+                                                    <li> ارزیابی مهارت های زندگی مشترک نامزدها</li>
+                                                </ul>  
+                                                <p>وقتی دو نفر تصمیم به ازدواج با یکدیگر می گیرند مقدمات ازدواج خود را فراهم می کنند، اما اگر به بررسی دقیق تر بپردازیم متوجه می شویم آنها مقدمات عروسی خود را فراهم می کنند و در واقع برای عروسی آماده می شوند تا برای ازدواج. خرید و یا اجاره لباس عروسی،  خرید طلا و جواهرات، اجاره سالن و تهیه سفارش غذا، تهیه لیست میهمانان، چاپ کارت عروسی و درنهایت مراسم عروسی. تمام آمادگی های چند ماهه در یک شب به اتمام می رسد. ظاهراً همه چیز پسندیده است. اما آیا به این هم فکر می کنیم اگر این زوج جوان با یکدیگر در موضوعاتی مانند: تصمیم گیری در مسائل زندگی مشترک، برنامه ریزی مالی، اوقات فراغت، برقراری ارتباط، اعتقادات مذهبی، فعالیت های لذت بخش، صمیمیت و دلبستگی، مسئولیت پذیری، ایجاد تغییر در یکدیگر، قضاوت منصفانه بر مبنای جنبه های مثبت و منفی و ... با دشواری مواجه شدند با کدام وسیله در سبد جهیزیه و با کدام قسمت از ماشین و خانه خواهند توانست این مشکلات را حل کنند؟ اگر فریاد آنان در حل مسائل زندگی مشترک بلند شد و به گوش همسایه و دیگران رسید، آیا باز هم همه چیز آبرومندانه خواهد بود؟ هدف اصلی مشاوره پیش از ازدواج، کمک به افراد برای انتخاب زوج مناسب است، این مرحله مهمترین مرحله‌ مشاوره ازدواج است زیرا جنبه‌ پیشگیری دارد و در صورت هدایت صحیح، موجب تأمین بهداشت روانی خانواده می‌شود. اهمیت مشاوره پیش از ازدواج زمانی مشخص می‌شود که به این نکته توجه داشته باشیم که انسان ها از یکدیگر شناخت کافی ندارند، بنابراین به منظور دستیابی به این شناخت برای ازدواج به کمک مشاوره نیاز دارید.</p>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+
+                                        <!-- Accordion card -->
+                                        <div class="card mb-4">
+                                            <!-- Card header -->
+                                            <div class="card-header p-0 z-depth-1" role="tab" id="heading29">
+                                                <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse29"
+                                                    aria-expanded="true" aria-controls="collapse29">
+                                                    <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                    <!-- <i class="fa fa-smile-o fa-2x p-3 mr-4 float-left black-text"
+                                                        aria-hidden="true"></i> -->
+                                                    <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                            نحوه انجام مشاوره قبل از ازدواج چگونه است؟
+                                                    </h6>
+                                                </a>
+                                            </div>
+    
+                                            <!-- Card body -->
+                                            <div id="collapse29" class="collapse" role="tabpanel" aria-labelledby="heading29"
+                                                data-parent="#accordionEx5">
+                                                <div class="card-body  white-text z-depth-1">
+                                                    <p class="p-md-4 mb-0">
+                                                            در مشاوره پیش از ازدواج، مشاور جلساتی به‌ صورت انفرادی و زوجی (زوج درمانی)، مشاوره می‌دهد. گاهی اوقات بعضی از مشاوران آزمون های معتبری را به صورت کتبی از طرفین می‌گیرند که احتمال موفقیت‌آمیز بودن ازدواج را بررسی می‌کند، البته احتمال به‌ معنی قطعیت نیست.
+
+                                                    </p>
+                                                   
+                                                    <p>این آزمون های شناختی به‌ منظور شناخت زیر ساخت های شخصیتی طرفین به کار می‌رود. به‌ عنوان مثال، در نظر بگیرید از طریق این آزمون ها، یکی از زوج ها درون‌گرا شناسایی شود، که تمایل به کناره‌گیری، سکوت، تنهایی و خلوت دارد، در مقابل زوج دیگر برون‌گرا است به طوری که حضور در جمع، خرید کردن و مهمانی رفتن را ترجیح می‌دهد، مسلماً این دو نفر در ارتباط با هم به مشکلاتی برخورد خواهند خورد، چرا که خصوصیات زیرساختی شخصیتشان با هم متفاوت است، به این معنی که یک نفر همیشه باید گذشت کند و خواسته‌های خود را نادیده بگیرد. </p>
+                                                <p>متخصص در مشاوره پیش از ازدواج توانایی سنجش و شناخت تفاوت های زیر‌ بنای شخصیت را دارد و نظر زوجین را نسبت به این تفاوت ها جلب می‌کند، موارد دیگری که در جلسات مشاوره پیش از ازدواج بررسی می‌شود، آرزوها، تمایلات، توقعات، خط قرمزها و رمز و رازهای طرفین است، مشاوره قبل از ازدواج به طور کلی مشاوره برای انتخاب مورد مناسب برای یک عمر زندگی است. درمشاوره قبل از ازدواج، مشاور هیچ وقت به طرفین نمی گوید که این کار را بکنید یا نکنید بلکه وظیفه مشاور آگاه کردن است. او می‌گوید که نتیجه چنین ازدواجی چه خواهد بود تا شما خودتان دست به انتخاب بزنید، مشاور تلاش می‌کند دیدگاه‌ها و اهداف زوجین را در زندگی مورد بررسی قرار دهد و طرف مقابل را با این دیدگاه‌ها و اهداف آشنا کند.
+                                                    </p>        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+    
+                                        <!-- Accordion card -->
+                                        <div class="card mb-4">
+    
+                                            <!-- Card header -->
+                                            <div class="card-header p-0 z-depth-1" role="tab" id="heading30">
+                                                <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse30"
+                                                    aria-expanded="true" aria-controls="collapse30">
+                                                    <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                    <!-- <i class="fa fa-cogs fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i> -->
+                                                    <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                            ۳ نکته کلیدی که با مشاوره قبل از ازدواج از آن آگاه می شوید
+                                                    </h6>
+                                                </a>
+                                            </div>
+    
+                                            <!-- Card body -->
+                                            <div id="collapse30" class="collapse" role="tabpanel" aria-labelledby="heading30"
+                                                data-parent="#accordionEx5">
+                                                <div class="card-body  white-text z-depth-1">
+                                                    <p>مشاوره قبل از ازدواج بر حول چند اصل کلی متمرکز است. با انجام مشاوره قبل از ازدواج شما در خصوص مسائل ذیل آگاهی های مناسبی را کسب خواهید نمود .</p>
+                                                  
+                                                    <p class="p-md-4 mb-0">قطعا مسائل مالی در آغاز زندگی زیاد توسط زوج ها مد نظر گرفته نمی شود، بخصوص آن هنگام که صحبت از عشق و علاقه در میان باشد. آنچه که زوجین جوان معمولا از آن غفلت می کنند نیاز به کسب استقلال مالی پیش از ازدواج است، ازدواج هایی که پیش از رسیدن به استقلال مالی انجام می پذیرند معمولا با دشواری های فراوانی همراه می شوند. استقلال مالی اولین شرط تشکیل یک خانواده است ، متاسفانه فرهنگ ما به گونه ای است که در صورت عدم وجود استقلال مالی خانواده های زوجین دخالت های بسیاری در امور آنها به انجام می رسانند، که این امر زندگی مشترک زوجین را با دشواری های فراوانی رو به رو می کند. </p>
+                                             <p>مسائل جنسی یکی دیگر از مسائلی است که در مشاوره قبل از ازدواج مورد توجه قرار می گیرد. شاید با قطعیت بتوان اظهار داشت تداوم و احساس رضایت از یک زندگی مشترک به میزان زیادی به تداوم یک رابطه زناشویی وابسته است، یکی از مسائلی که به صورت علمی در یک جلسه مشاوره ازدواج مورد بررسی قرار می گیرد این است که در حین گفتگو با زوجین دریابند: اولا آنان تا چه میزان آماده انجام فداکاری های جنسی در مقابل یکدیگر هستند و آیا آنان آماده اند که نسبت به یکدیگر وفادار بمانند؟ دوم آنکه روابط جنسی آنان در دراز مدت تا چه میزان رضایت بخش خواهد بود.</p>
+                                            <p>مسائلی از این دست همگی در یک مشاوره قبل از ازدواج زیر ذره بین قرار می گیرند. مسائل مربوط به سطح آگاهی ها یکی دیگر از مسائلی ست که باید مورد توجه قرار گیرد، مسائلی چون سطح هوش، سطح خانوادگی طرفین، مسائل مذهبی و اعتقادی و دیگر مسائلی از این دست می تواند در نحوه تعامل زوجین با یکدیگر بسیار تاثیر گذار باشد. بنابر آنچه که گفته شد می توان به وضوح دریافت در بنیان گذاری یک زندگی مشترک موفق، طیف وسیعی از مسائل دخیل هستند و همین امر ضرورت انجام مشاوره قبل از ازدواج را بخوبی نمایان می سازد. </p>    
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                         <!-- Accordion card -->
+                                         <div class="card mb-4">
+    
+                                                <!-- Card header -->
+                                                <div class="card-header p-0 z-depth-1" role="tab" id="heading31">
+                                                    <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse31"
+                                                        aria-expanded="true" aria-controls="collapse31">
+                                                        <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+                                                        <!-- <i class="fa fa-cogs fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i> -->
+                                                        <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                                مشاوره قبل از ازدواج برای آگاهی و شناخت
+                                                        </h6>
+                                                    </a>
+                                                </div>
+        
+                                                <!-- Card body -->
+                                                <div id="collapse31" class="collapse" role="tabpanel" aria-labelledby="heading31"
+                                                    data-parent="#accordionEx5">
+                                                    <div class="card-body  white-text z-depth-1">
+                                                            <p class="p-md-4 mb-0">
+                                                                    گروهی از زوجین هستند که تمایلی برای انجام مشاوره ازدواج از خود نشان نمی دهند. باور اکثر آنها این است که مشاوره پیش از ازدواج یعنی کنکاش و بر ملا کردن ضعفها، طبیعی است که هیچکس دوست ندارد نقطه ضعف های اخلاقی و رفتاریش برای دیگران بر ملا شود. باید گفت که چنین تصوری از پایه اشتباه است، هدف از مشاوره قبل از ازدواج به هیچ عنوان کنکاش در اعماق روحی طرفین و بر ملا کردن ایرادات و نقاط ضعف آنها برای یکدیگر نیست. مشاوران ازدواج به خوبی به این نکته واقف اند که زوجهای بسیاری وجود دارند که علارغم مشکلات رفتاری توانسته اند یک رابطه عمیق روحی را با یکدیگر پایه گذاری نمایند. اصولا وجود ایرادات رفتاری یکی از خصوصیات انسانها است، وجود چنین ایراداتی هرگز باعث نمی شود که شما نتوانید یک رابطه مستحکم عاطفی را بنا کنید. آنچه که در مشاوره ازدواج اهمیت دارد نحوه مدیریت کردن بر این مشکلات است به بیان دیگر در مشاوره قبل از ازدواج شما می توانید نسبت به نوع ارتباطی که مابین شما در یک زندگی مشترک شکل خواهد گرفت آگاهی پیدا کنید. این ارتباط خود به مانند موجود زنده ای است که شخصیتی مستقل از شما دارد این ارتباط منحصر به فرد بوده و تنها مخصوص به شما و فردی است که هم اکنون برای ازدواج در نظر دارید، اگر فرد مورد نظر شما برای ازدواج تغییر پیدا کند نوع این ارتباط نیز به طور کلی تغییر پیدا خواهد کرد. اهمیتی ندارد که شما و یا طرف مقابل شما دارای چه خصوصیات منفی و یا مثبتی هستید. آنچه که اهمیت دارد نوع ارتباطی ست که با یکدیگر پایه گذاری می نمایید. متاسفانه زوج های جوان بسیاری وجود دارند که از این نکات کلیدی غفلت می ورزند، به جرات می توان ادعا کرد نادیده گرفتن این موارد به عدم شناخت و آگاهی طرفین از یکدیگر منجر می شود در حالی که با مشاوره قبل از ازدواج می توان موفقیت در ازدواج را بالا برد و مانع از طلاق شد. همین مسأله نمایانگر لزوم مشاوره ازدواج است به همین دلیل از شما تقاضا داریم که خود را بی نیاز از انجام مشاوره های ازدواج مپندارید.                                                           
+                                                            </p>
+                                                            
+                                                    </div>
+                                                </div>
+                                         </div>
+                                         <!-- Accordion card -->
+                                         <!-- Accordion card -->
+                                        <div class="card mb-4">
+    
+                                                <!-- Card header -->
+                                                <div class="card-header p-0 z-depth-1" role="tab" id="heading32">
+                                                    <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse32"
+                                                        aria-expanded="true" aria-controls="collapse32">
+                                                        <!-- <i class="fa fa-cogs fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i> -->
+                                                        <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                        <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                                بهترین زمان برای مشاوره قبل از ازدواج
+                                                        </h6>
+                                                    </a>
+                                                </div>
+        
+                                                <!-- Card body -->
+                                                <div id="collapse32" class="collapse" role="tabpanel" aria-labelledby="heading32"
+                                                    data-parent="#accordionEx5">
+                                                    <div class="card-body  white-text z-depth-1">
+                                                           <p>
+                                                                زمان انجام مشاوره ازدواج دارای اهمیت بسیاری است همانگونه که شرح داده شد. هدف از انجام مشاوره قبل از ازدواج رسیدن به یک مدل برای برقراری ارتباط بین زوجین است و برای آنکه این امر با موفقیت توام گردد، می بایست در زمان مناسبی این کار صورت پذیرد. بلافاصله پس از آشنایی و یا شروع صحبت موقعیت مناسبی برای اینکار نیست. همچنین گذشت زمان زیاد از آشنایی به دلیل اینکه رابطه عاطفی شکل گرفته از سودمندی جلسات مشاوره ازدواج خواهد کاست. معمولا بهترین زمان انجام مشاوره در صورت خواستگاری بعد از هشت الی ده ساعت گفتگو و در صورت آشنایی پس از دو یا سه ملاقات است. با این در هر مرحله از آشنایی که هستید برای ازدواج که یکی از اصلی ترین تصمیمات زندگی هر فرد است بهتر است از یک متخصص مشورت بگیرید.
+                                                           </p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                    </div>
+                                    <!--/.Accordion wrapper-->
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content -->
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Card -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small  pt-4 mt-5">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+    
+                <!-- Footer links -->
+                <div class="row text-center text-md-right mt-3 pb-3">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">روانشناسی</h6>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    </div>
+                    <!-- Grid column -->
+    
+                    <hr class="w-100 clearfix d-md-none">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-list" style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">زمینه فعالیت</h6>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>روانشناسی و مشاوره</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>مشاوره تحصیلی وانتخاب رشته</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>آموزش و کلاس های تقویتی</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>مشاوره تلفنی</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+    
+                    <hr class="w-100 clearfix d-md-none">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footer-list" style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">لینک ها</h6>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Help</a>
+                        </p>
+                    </div>
+    
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3  " style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">تماس با ما</h6>
+                        <p>
+                            <i class="fa fa-home "></i> تهران شهر ری</p>
+                        <p>
+                            <i class="fa fa-envelope "></i> info@gmail.com </p>
+                        <p>
+                            <i class="fa fa-phone "></i> + 01 234 567 88</p>
+                        <p>
+                            <i class="fa fa-print"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+    
+                </div>
+                <!-- Footer links -->
+    
+    
+    
+    
+    
+            </div>
+            <!-- Footer Links -->
+            <div class="container-fluid" style="    background: #1e2e3e;">
+    
+                <!-- Grid row -->
+                <div class="row d-flex align-items-center" style="    padding-top: 1em;">
+    
+    
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+    
+                        <!--Copyright-->
+                        <p class="text-center text-md-center">© 2018 Copyright:
+                            <a href="https://mdbootstrap.com/education/bootstrap/">
+                                <strong> MDBootstrap.com</strong>
+                            </a>
+                        </p>
+    
+                    </div>
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+    
+                        <!-- Social buttons -->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <!-- Grid column -->
+    
+                </div>
+                <!-- Grid row -->
+            </div>
+    </footer>
+    <!-- Footer -->
+    
+    
+    
+    <!-- script -->
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+    <!-- owl carousel -->
+    <script src="./js/owl.carousel.js"></script>
+
+    <!-- owl carousel -->
+    <script src="./js/mdb.min.js"></script>
+    <script src="./js/bootstrap4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    
+    
+    
+</body>

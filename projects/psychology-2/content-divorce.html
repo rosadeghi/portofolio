@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>psychology</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+    <!-- owl carousel -->
+
+    <!-- <script src="https://stackoverflow.com/questions/32405812/failed-to-load-resource-neterr-file-not-found-loading-json-js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.5.15.min.css" rel="stylesheet">
+    <link href="./Content/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="./css/bootstrap4.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+ <!-- header  -->
+ <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <body class="hidden-sn mdb-skin">
+
+                    <!--Double navigation-->
+                    <header>
+                        <!-- Sidebar navigation -->
+                        <div id="slide-out" class="side-nav sn-bg-4">
+                            <ul class="custom-scrollbar">
+                                <!-- Logo -->
+                                <li>
+                                    <div class="logo-wrapper waves-light">
+                                        <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+                                                class="img-fluid flex-center"></a>
+                                    </div>
+                                </li>
+                                <!--/. Logo -->
+                                <!--Social-->
+                                <li>
+                                    <ul class="social">
+                                        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                                        <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                                        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                                        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                                    </ul>
+                                </li>
+                                <!--/Social-->
+                                <!--Search Form-->
+                                <li>
+                                    <form class="search-form" role="search">
+                                        <div class="form-group md-form mt-0 pt-1 waves-light">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </form>
+                                </li>
+                                <!--/.Search Form-->
+                                <!-- Side navigation links -->
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>
+                                                Submit
+                                                blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">Submit listing</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Registration form</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i>
+                                                Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">For bloggers</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">For authors</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i>
+                                                About<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">Introduction</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Monthly meetings</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i>
+                                                Contact me<i class="fa fa-angle-down rotate-icon"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--/. Side navigation links -->
+                            </ul>
+                            <div class="sidenav-bg mask-strong"></div>
+                        </div>
+                        <!--/. Sidebar navigation -->
+                        <!-- Navbar -->
+                        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+                            <!-- SideNav slide-out button -->
+
+                            <!-- Breadcrumb-->
+                            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="index.html" target="blank"><i class="fa fa-home"></i> <span class="clearfix d-none d-sm-inline-block">صفحه اصلی</span></a>
+                                        </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" target="black"><i class="fa fa-envelope"></i>
+                                        <span class="clearfix d-none d-sm-inline-block">تماس با ما</span></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html" target="black"><i class="fa fa-user"></i>
+                                        <span class="clearfix d-none d-sm-inline-block">درباره ما</span></a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">نظرات</span></a>
+                                </li> -->
+                                 <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        لینک ها
+                                    </a>
+                                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div> 
+                                </li> -->
+                            </ul>
+                            <div class="breadcrumb-dn mr-auto">
+                                <h5>من به پروانه شدن می اندیشم</h5>
+                            </div>
+
+                            <!-- <div class="float-left">
+                                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                            </div> -->
+                        </nav>
+                        <!-- /.Navbar -->
+                    </header>
+                    <!--/.Double navigation-->
+
+                    <!--Main Layout-->
+                    <main>
+
+                    </main>
+                    <!--Main Layout-->
+
+                </body>
+            </div>
+        </div>
+    </div>
+
+    <!-- header  -->
+
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100 img-fluid" src="img/slide3.jpg" alt="First slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption animated fadeInDown">
+                    <h3 class="h3-responsive">مشاوره خانواده,ازدواج و طلاق
+                    </h3>
+                    <h4 class="h3-responsive">مشاوره تحصیلی جهت انتخاب بهتر رشته تحصیلی و یا مهارت های تخصصی.
+
+                        </h4>
+                    <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100 img-fluid" src="img/02.jpg" alt="Second slide">
+                    <div class="mask "></div>
+                </div>
+                <div class="carousel-caption animated fadeInDown">
+                    <h3 class="h3-responsive">مشاوره کودک و نوجوان
+                    </h3>
+                    <h4 class="h3-responsive">
+                        از طریق روانشناسی کودک با خصوصیات رشد و رفتاری کودکان خود آشنا شوید.</h4>
+                    <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100 img-fluid" src="img/audio-conferencing.jpg" alt="Third slide">
+                    <div class="mask rgba-black-slight"></div>
+                </div>
+                <div class="carousel-caption animated fadeInDown">
+                    <h3 class="h3-responsive">مشاوره تلفنی
+                    </h3>
+                    <h4 class="h3-responsive">مشاوره تلفنی ,مشاوره خانواده،مشاوره ازدواج،مشاوره فردی،و...
+
+                        </h4>
+                    <!-- <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</h5> -->
+                </div>
+            </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <!-- main-content -->
+    <div class="container-fluid">
+            <div class="row mt-5">
+                
+                    <div class="col-md-12">
+                            <div class="container first-part-img">
+                                    <img src="img/divorce.jpg" width="100%">
+                                </div>
+                    </div>
+            </div>
+
+                <div class="row mt-5">
+                <div class="col-md-12">
+                        <div class="container main-content first-part-content">
+                                <h4 class="mb-4">مشاوره طلاق</h4>
+                                  <div class="title-box"></div>
+                        <p>بسیاری از زوج‌ها به‌اشتباه تصور می‌کنند همین که قادر به تحمل یکدیگر نباشند و احساسات‌شان نسبت به هم سرد شود، یعنی موعد زندگی مشترک‌شان به سر رسیده و دیگر وقت جدایی است. اما نه! همان‌طور که برای آغاز زندگی مشترک باید به بلوغ فکری و پختگی برسید، برای طلاق نیز باید از لحاظ روحی و روانی آمادگی پیدا کنید. اقدام به طلاق بدون آمادگیِ مواجهه با پیامدهای آن، موجب بروز جدایی‌های زودهنگام و نسنجیده‌ای می‌شود که زندگی طرفین را تا سالیان سال تحت‌الشعاع قرار خواهد داد. در این مطلب قصد داریم به مرورِ آمادگی‌های لازم جهت تصمیم گیری برای طلاق بپردازیم. آنچه در ادامه می‌خوانید، گزیده‌ای از توصیه‌های دکتر بروس دِرمَن (Bruce Derman)، روان‌شناس بالینی، و وِندی گرِگسون (Wendy Gregson)، مشاور ازدواج و خانواده است که به زوج‌های متقاضی طلاق کمک می‌کنند تا جدایی کم‌آسیب‌تری داشته باشند. </p>
+                    <p>
+                            بسیاری از افراد، به‌ویژه در هیاهوی دعواهای زن‌ و شوهری، طرف مقابل‌شان را تهدید به طلاق می‌کنند. این تهدید معمولا به یکی از دلایل زیر رخ می‌دهد:
+
+                            خشم و عصبانیت؛
+                            اِعمال قدرت و سلطه بر دیگری به‌منظور تحمیل دیدگاه و نظرات خود؛
+                            تفهیم جدیت و پافشاری خود مبنی بر نیاز شدید به مشاهده‌ی تغییرات واقعی؛
+                            هشدار درمورد لغزش و بی‌ثباتی یک رابطه.
+                            افرادی که مدام همسرشان را به جدایی تهدید می‌کنند بدون اینکه واقعا بخواهند طلاق بگیرند، به اعتبار خود در زندگی مشترک لطمه می‌زنند. اما درصورتی‌که به‌طور جدی مایل به طلاق هستید و به این نتیجه رسیده‌اید که «این ازدواج یه فصلی از زندگیم بود که دلم می‌خواد تمومش کنم، چون خیالم راحته که هرکاری از دستم برمیومد به امید ادامه‌ی این رابطه انجام دادم، اما دیگه هیچ کاری از دستم ساخته نیست»، باید این موضوع را به‌نحوی مسالمت‌آمیز و بدون خشونت و سر
+                    </div>
+                </div>
+                </div>
+           
+    </div>
+    <!-- main-content -->
+
+
+    
+    <!--accordion  Card -->
+    <div class="container-fluid mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12" style="    padding: 0;
+                ">
+                    <div class="card card-image" style="background-image: url(img/The-Worst-Ways-to-Tell-Your-Spouse-You-Want-a-Divorce.jpg">
+    
+                        <!-- Content -->
+                        <div class="py-5 px-4">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-10 col-xl-8">
+    
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion md-accordion accordion-5" id="accordionEx5" role="tablist"
+                                        aria-multiselectable="true">
+    
+                                        <!-- Accordion card -->
+                                        <div class="card mb-4">
+    
+                                            <!-- Card header -->
+                                            <div class="card-header p-0 z-depth-1" role="tab" id="heading28">
+                                                <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse28"
+                                                    aria-expanded="true" aria-controls="collapse28">
+                                                    <!-- <i class="fa fa-heartbeat fa-2x p-3 mr-4 float-left black-text"
+                                                        aria-hidden="true"></i> -->
+                                                       <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                    <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                            طلاق از چه روش هایی امکان پذیر است؟
+                                                    </h6>
+                                                    
+                                                </a>
+                                            </div>
+    
+                                            <!-- Card body -->
+                                            <div id="collapse28" class="collapse show" role="tabpanel" aria-labelledby="heading28"
+                                                data-parent="#accordionEx5">
+                                                <div class="card-body  white-text z-depth-1">
+                                                        <ul>
+                                                                <li>ساده ترین شکل وقوع طلاق زمانیست که زن و شوهر بر مساله طلاق توافق داشته باشند و دیگر مایل به ادامه زندگی با هم نباشند. این نوع طلاق به طلاق توافقی معروف است که از اختیار مرد در طلاق ناشی میشود.</li>
+                                                           <li>نوع دیگر طلاق که اساس تمام قوانین طلاق میباشد طلاق به خواست و اراده مرد است.</li>
+                                                          
+                                                        <li>طلاق از طرف زوجه که این نوع طلاق تنها در صورتی است که زوجه یکی از شروط ضمن عقد را داشته باشد.</li></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+
+                                        <!-- Accordion card -->
+                                        <div class="card mb-4">
+                                            <!-- Card header -->
+                                            <div class="card-header p-0 z-depth-1" role="tab" id="heading29">
+                                                <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse29"
+                                                    aria-expanded="true" aria-controls="collapse29">
+                                                    <!-- <i class="fa fa-smile-o fa-2x p-3 mr-4 float-left black-text"
+                                                        aria-hidden="true"></i> -->
+                                                        <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                    <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                            طلاق توافقی به چه صورتی میباشد؟
+                                                    </h6>
+                                                </a>
+                                            </div>
+    
+                                            <!-- Card body -->
+                                            <div id="collapse29" class="collapse" role="tabpanel" aria-labelledby="heading29"
+                                                data-parent="#accordionEx5">
+                                                <div class="card-body  white-text z-depth-1">
+                                                    <p class="p-md-4 mb-0">
+                                                            زمانه عوض شده است. این فقط انتخاب همسر و ازدواج نیست که دور از همه رسوم سنتی و حرف و حدیث‌های فامیل انجام می‌شود؛ حتی طلاقی که دعوا و تهدید و قشون‌کشی خانوادگی با خود داشت، حالا به اتفاقی آرام و بی‌سر و صدا تبدیل شده است به نام طلاق توافقی! انگار نه انگار این زوجی که کنار یکدیگر روی صندلی‌های دادگاه خانواده نشسته‌اند، چند سالی از عمرشان را زیر یک سقف با یکدیگر هدر داده‌اند. آن‌ها همین که از آن چند سال حرف می‌زنند، می‌گویند: هم اون خوب بود و هم من؛ ولی با هم تفاهم نداشتیم.<br>
+                                                            طلاق توافقی بدین شکل است که مرد و زن پس از اینکه ادامه زندگی مشترک را به صلاح تشخیص ندادند میتوانند با توافق در خصوص مهریه و نفقه و اجرت المثل و حضانت فرزند برای طلاق توافقی اقدام کنند.<br>
+
+                                                    </p>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+    
+                                        <!-- Accordion card -->
+                                        <div class="card mb-4">
+    
+                                            <!-- Card header -->
+                                            <div class="card-header p-0 z-depth-1" role="tab" id="heading30">
+                                                <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse30"
+                                                    aria-expanded="true" aria-controls="collapse30">
+                                                    <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                    <!-- <i class="fa fa-cogs fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i> -->
+                                                    <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                          مشاوره طلاق و راهكارهای طلاق و قوانین طلاق
+                                                    </h6>
+                                                </a>
+                                            </div>
+    
+                                            <!-- Card body -->
+                                            <div id="collapse30" class="collapse" role="tabpanel" aria-labelledby="heading30"
+                                                data-parent="#accordionEx5">
+                                                <div class="card-body  white-text z-depth-1">
+                                                    <p class="p-md-4 mb-0">احكام شرعی و قانونی در مورد طلاق و طلاق توافقی بسیار متعدد و زیاد است. در دادگاه های اسلامی قضاوت قاضی در مورد درستی تطبیق این قوانین با موراد درخواست های طلاق بسیار سختگیرانه و دقیق است و سعی در رفع مشكلات زوجین از طریق بكار بردن این قوانین دارند. درخواست طلاق از سوی هر یك از زوجین كه مطرح شود ممكن است تفاوتهایی در نحوه استفاده از این قوانین پیش بیاید و به نفع و یا ضرر فرد شود. در بسیاری از موارد زن و مرد در مورد قوانینی مانند طلاق توافقی، اطلاعات بسیار كمی دارند و یا در خصوص شرایط برقراری مهریه زن اطلاعاتی ندارند. در  مورد بسیاری از پرونده های طلاق اینطور بنظر می رسد كه اطلاع از قوانین طلاق، طلاق را بسیار آسانتر و از میزان صدمات آن می كاهد. بهترین نوع طلاق، طلاق توافقی است كه در آن زن و شوهر با پذیرفتن شرایط همدیگر و با علم به مشكلات حقوقی و هزینه و زمانی كه طلاق غیر توافقی می گیرد تصمیم می گیرند از هم جدا و میزان صدمه را به حداقل و زندگی تازه ای را شروع كنند. <br>
+                                                        متاسفانه در برخی دفاتر مشاوره، زن و شوهر به جدایی و طلاق توافقی تشویق می شوند. مشاوره طلاق به معنی كمك به زن و شوهر به جدا شدن به هر قیمتی نیست. بلكه مشاور سعی می كند كه با بررسی مشكلات زوجین در خصوص مناسب بودن راه حل طلاق برای زوجین بهترین راه را به آنان پیشنهاد دهد و در صورتی كه به این نتیجه برسد كه مشاوره روشی درست برای پایان دادن به مشکلات و آسیب های زوجین، در زندگی مشترک است، آن را بكار بگیرند. همچنین در مورد تبعات حقوقی و اجتماعی طلاق  و قوانین آن و تطبیق آن با مشكلات زوجین اطلاعات بسیاری به زوجین می دهند و ایشان را حتی در مواردی از طلاق منصرف می كنند و راه هایی را برای رفع مشكلات زندگی مشترک ارائه می دهند. عدم اطلاع و احترام دختران و پسران به قانون و سنت ها موجب بروز شرایطی می شود كه زوجین بعد از مدت كوتاهی كه غالبا كمتر از یكسال است درخواست طلاق می دهند در حالی كه از تبعات اجتماعی و عاطفی آن برای هر دو طرف اطلاع ندارند. مشاوره طلاق به زوجین كمك میكند كه برای طلاق از منطق بیشتری استفاده كنند و كمتر از احساسات خود پیروی كنند و به این ترتیب از طلاق های اشتباه جلوگیری کنند و طلاقهایی هم كه رخ میدهد با صدمات كمتری همراه باشد. 80% طلاقها در 5 سال اول زندگی رخ میدهد. <br>
+                                                        برای جلوگیری از طلاق، بهترین راه استفاده از مشاوره طولانی مدت و هدف دار برای زوجین قبل از ازدواج است و در صورتی كه به هر دلیل زوجین تصمیم به طلاق گرفتند بهتر است از مشاوره طلاق استفاده كنند. طلاق سریع و بدون بررسی كافی ریشه بسیاری از صدمات روحی و جمسی می باشد. بنابراین در مورد تصمیم به این مهمی حداقل یك ماه به خود فرصت دهید و در این مدت، بسیار خوب است كه از مشاوره ی مستمر یک مشاور  مجرب بهره مند شوید.  </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                         <!-- Accordion card -->
+                                         <div class="card mb-4">
+    
+                                                <!-- Card header -->
+                                                <div class="card-header p-0 z-depth-1" role="tab" id="heading31">
+                                                    <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse31"
+                                                        aria-expanded="true" aria-controls="collapse31">
+                                                        <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                        <!-- <i class="fa fa-cogs fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i> -->
+                                                        <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                                مشاوره طلاق برای فرزندان طلاق و پیشگیری طلاق
+                                                        </h6>
+                                                    </a>
+                                                </div>
+        
+                                                <!-- Card body -->
+                                                <div id="collapse31" class="collapse" role="tabpanel" aria-labelledby="heading31"
+                                                    data-parent="#accordionEx5">
+                                                    <div class="card-body white-text z-depth-1">
+                                                            <p class="p-md-4 mb-0">بخشی از مشاوره طلاق مربوط به فرزندان است. فرزندان در خانواده ای كه دچار طلاق فیزیكی و یا عاطفی شده اند بیشترین آسیب را می بینند و از این رو قبل از اقدام به طلاق با مشاوره گرفتن از مشاور مجرب در مورد صدماتی که به فرزندان وارد می شود انجام دهید. در مواردی كه زوجین فاقد فرزند می باشند طلاق بسیار راحت تر است. پس قبل از اقدام به طلاق و متشنج کردن روحیه فرزندانتان با مشاور مجرب مشورت کرده و راه حل مناسبی برای کم کردن صدمات  روانی واجتماعی به فرزندانتان کمک کنید.
+                                                            </p>
+                                                            
+                                                    </div>
+                                                </div>
+                                         </div>
+                                         <!-- Accordion card -->
+                                         <!-- Accordion card -->
+                                        <div class="card mb-4">
+    
+                                                <!-- Card header -->
+                                                <div class="card-header p-0 z-depth-1" role="tab" id="heading32">
+                                                    <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse32"
+                                                        aria-expanded="true" aria-controls="collapse32">
+                                                        <i class="fa fa-angle-down rotate-icon fa-2x fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i>
+
+                                                        <!-- <i class="fa fa-cogs fa-2x p-3 mr-4 float-left black-text" aria-hidden="true"></i> -->
+                                                        <h6 class="text-uppercase white-text mb-0 py-3 mt-1">
+                                                                مراحل مشاوره طلاق به شرح زیر است
+                                                        </h6>
+                                                    </a>
+                                                </div>
+        
+                                                <!-- Card body -->
+                                                <div id="collapse32" class="collapse" role="tabpanel" aria-labelledby="heading32"
+                                                    data-parent="#accordionEx5">
+                                                    <div class="card-body  white-text z-depth-1">
+                                                            <ul>
+                                                                   <li>مراجعه به مشاور و در میان گذاشتن مشكل از سوی هر دو طرف دعوا</li>
+                                                                   <li>ادامه مشاوره در حداقل 2 جلسه برای كاهش شدت احساسات زوجین</li>
+                                                                   <li>مشاوره روانشناسی طرفین برای پی بردن علت اصلی نارضایتی طرفین</li>
+                                                                   <li>همراهی زوجین برای یافتن راه حل های عملی برای تامین بخش مهم خواسته های منطقی هر دو طرف</li>
+                                                                   <li>ادامه مشاوره با فرزندان بصورت جداگانه و یا بصورت جمعی در جلسات بحث آزاد با والدین و فرزندان</li>
+                                                                   <li>بررسی و رصد نمودن شدت مشكل در فواصل زمانی مشخص.</li>
+                                                                   <li>ارائه بهترین راه و روش طلاق در صورتی كه طلاق بهترین روش برای هر دو طرف تشخیص داده شود.</li>
+                                                            <li>بررسی قوانین طلاق در مورد زوجین، مورد مشاوره و دادن اطلاعات دقیق در مورد فرایند طلاق و نیازهای حقوقی آنها.</li>
+                                                                </ul>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                    </div>
+                                    <!--/.Accordion wrapper-->
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content -->
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Card -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small  pt-4 mt-5">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+    
+                <!-- Footer links -->
+                <div class="row text-center text-md-right mt-3 pb-3">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">روانشناسی</h6>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    </div>
+                    <!-- Grid column -->
+    
+                    <hr class="w-100 clearfix d-md-none">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-list" style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">زمینه فعالیت</h6>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>روانشناسی و مشاوره</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>مشاوره تحصیلی وانتخاب رشته</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>آموزش و کلاس های تقویتی</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>مشاوره تلفنی</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+    
+                    <hr class="w-100 clearfix d-md-none">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footer-list" style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">لینک ها</h6>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#!"><i class="fa fa-chevron-circle-left"></i>Help</a>
+                        </p>
+                    </div>
+    
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+    
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3  " style="padding: 0">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">تماس با ما</h6>
+                        <p>
+                            <i class="fa fa-home "></i> تهران شهر ری</p>
+                        <p>
+                            <i class="fa fa-envelope "></i> info@gmail.com </p>
+                        <p>
+                            <i class="fa fa-phone "></i> + 01 234 567 88</p>
+                        <p>
+                            <i class="fa fa-print"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+    
+                </div>
+                <!-- Footer links -->
+    
+    
+    
+    
+    
+            </div>
+            <!-- Footer Links -->
+            <div class="container-fluid" style="    background: #1e2e3e;">
+    
+                <!-- Grid row -->
+                <div class="row d-flex align-items-center" style="    padding-top: 1em;">
+    
+    
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+    
+                        <!--Copyright-->
+                        <p class="text-center text-md-center">© 2018 Copyright:
+                            <a href="https://mdbootstrap.com/education/bootstrap/">
+                                <strong> MDBootstrap.com</strong>
+                            </a>
+                        </p>
+    
+                    </div>
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+    
+                        <!-- Social buttons -->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <!-- Grid column -->
+    
+                </div>
+                <!-- Grid row -->
+            </div>
+    </footer>
+    <!-- Footer -->
+    
+    
+    
+    <!-- script -->
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+    <!-- owl carousel -->
+    <script src="./js/owl.carousel.js"></script>
+
+    <!-- owl carousel -->
+    <script src="./js/mdb.min.js"></script>
+    <script src="./js/bootstrap4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    
+    
+    
+</body>
