@@ -41,21 +41,11 @@ body{
 .border-color-2{
     border-color: #f1e1f0 !important;
 }
-/*.section-title{
-    margin: 2em 0;
-    padding: 1em 0;
+
+a:hover{
+    text-decoration: none !important
 }
-h2::after {
-    right: 50%;
-    content: "";
-    width: 70px;
-    height: 2px;
-    background: #633f7b;
-    position: absolute;
-    left: 0;
-    margin: 1.7em -1.1em;
-    text-align: center;
-}*/
+
 .title{
         text-align: right;
 /*margin: 2em 0;*/
@@ -301,10 +291,14 @@ height: 500px;
     /*letter-spacing: .25rem;*/
 }
 .stripe.light {
-    background-color: rgba(255,255,255,.7);
-}
+    background-color: rgb(110, 78, 123);}
 logo {height: 80px; margin-left: 20px;}
-
+.stripe.light p a{
+    color: #fff
+}
+.stripe.light a p{
+    color: #fff
+}
 .wrapper {
     padding: 50px 50px;
     max-width: 1200px;
@@ -634,6 +628,7 @@ transform: translateY(-50%) translateX(0px)  scale(1);
         transform-style: preserve-3d;
         z-index:2;
     }
+   
     .square-flip:hover .square-container{
         
         -webkit-transform: translateY(-50%) translateX(-650px)  scale(.88);
@@ -660,6 +655,13 @@ transform: translateY(-50%) translateX(0px)  scale(1);
 
         transform-style: preserve-3d;
         z-index:2;
+    }
+    .square-container2 ul {
+        padding: 0;
+        font-size: 15px;
+    }
+    .square-container2 ul li {
+        list-style-type: none;
     }
     .square-flip:hover .square-container2{
         
@@ -695,6 +697,7 @@ transform: translateY(-50%) translateX(0px)  scale(1);
     .align-center{
         margin:0 auto;
     }
+    
     .kallyas-button{
         display:block;
         width:160px;
@@ -721,7 +724,10 @@ transform: translateY(-50%) translateX(0px)  scale(1);
             transition: 0.60s;
             -webkit-transition: 0.60s;
     }
+.textshadow{
+    margin-top: 1em;
 
+}
     .square-flip .square .boxshadow{
         -webkit-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
         -moz-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
